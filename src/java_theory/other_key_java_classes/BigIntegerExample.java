@@ -2,6 +2,15 @@ package java_theory.other_key_java_classes;
 
 import java.math.BigInteger;
 
+/*
+
+BigInteger
+
+Provides immutable arbitrary-precision integers.
+Useful when dealing with numbers larger than long can handle.
+
+*/
+
 public class BigIntegerExample {
     public static void main(String[] args) {
         // Create two BigInteger values

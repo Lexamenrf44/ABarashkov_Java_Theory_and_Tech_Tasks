@@ -2,6 +2,14 @@ package java_theory.utility_classes;
 
 import java.util.Arrays;
 
+/*
+
+Arrays
+
+A utility class for working with arrays, including static methods for sorting, searching, copying, and comparing arrays.
+
+*/
+
 public class ArraysExample {
     public static void main(String[] args) {
         // Create an array of integers

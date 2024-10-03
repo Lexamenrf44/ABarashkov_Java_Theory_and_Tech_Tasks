@@ -2,6 +2,15 @@ package java_theory.utility_classes;
 
 import java.util.Objects;
 
+/*
+
+Objects
+
+Utility class providing methods for handling objects, such as Objects.equals(), Objects.hashCode(), Objects.requireNonNull(), and more.
+Commonly used for null-safe comparisons and handling.
+
+*/
+
 public class ObjectsExample {
     public static void main(String[] args) {
         String s1 = null;

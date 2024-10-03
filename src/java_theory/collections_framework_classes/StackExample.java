@@ -2,6 +2,16 @@ package java_theory.collections_framework_classes;
 
 import java.util.Stack;
 
+/*
+
+Stack
+
+Extends the Vector class. Represents a last-in, first-out (LIFO) data structure.
+Methods like push(), pop(), peek(), etc., are provided for stack operations.
+Often replaced by the Deque interface and its implementations (ArrayDeque, LinkedList) for stack operations.
+
+*/
+
 public class StackExample {
     public static void main(String[] args) {
         // Create a new Stack of integers

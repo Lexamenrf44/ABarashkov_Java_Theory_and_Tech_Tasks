@@ -1,5 +1,15 @@
 package java_theory.utility_classes;
 
+/*
+
+StringBuilder and StringBuffer
+
+Used to create and manipulate mutable strings.
+StringBuilder is faster but not thread-safe.
+StringBuffer is thread-safe, with synchronized methods for concurrent access.
+
+*/
+
 public class StringBuilderExample {
     public static void main(String[] args) {
         // Create a new StringBuilder with an initial string

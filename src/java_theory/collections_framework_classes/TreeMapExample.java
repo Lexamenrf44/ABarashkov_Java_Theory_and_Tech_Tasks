@@ -2,6 +2,15 @@ package java_theory.collections_framework_classes;
 
 import java.util.TreeMap;
 
+/*
+
+TreeMap
+
+Implements the NavigableMap interface. Stores key-value pairs in sorted order based on the keys.
+Internally uses a Red-Black Tree, and guarantees O(log n) time complexity for operations like insertion, deletion, and search.
+
+*/
+
 public class TreeMapExample {
     public static void main(String[] args) {
         // Create a new TreeMap (stores key-value pairs in sorted order of keys)

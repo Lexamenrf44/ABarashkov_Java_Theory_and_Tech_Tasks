@@ -2,6 +2,15 @@ package java_theory.collections_framework_classes;
 
 import java.util.PriorityQueue;
 
+/*
+
+PriorityQueue
+
+Implements the Queue interface. Elements are stored according to their priority (natural ordering or custom comparator).
+Useful for scenarios where you need to frequently access the element with the highest or lowest priority.
+
+*/
+
 public class PriorityQueueExample {
     public static void main(String[] args) {
         // Create a new PriorityQueue of integers (min-heap by default)

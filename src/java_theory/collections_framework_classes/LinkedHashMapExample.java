@@ -2,6 +2,15 @@ package java_theory.collections_framework_classes;
 
 import java.util.LinkedHashMap;
 
+/*
+
+LinkedHashMap
+
+Implements the Map interface. Maintains insertion order for key-value pairs.
+Useful when you want to iterate over entries in the order they were inserted.
+
+*/
+
 public class LinkedHashMapExample {
     public static void main(String[] args) {
         // Create a new LinkedHashMap (maintains insertion order of key-value pairs)

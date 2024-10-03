@@ -2,6 +2,15 @@ package java_theory.collections_framework_classes;
 
 import java.util.LinkedHashSet;
 
+/*
+
+LinkedHashSet
+
+Implements the Set interface. Maintains insertion order while ensuring uniqueness of elements.
+Provides predictable iteration order, unlike HashSet.
+
+*/
+
 public class LinkedHashSetExample {
     public static void main(String[] args) {
         // Create a new LinkedHashSet of integers (maintains insertion order)

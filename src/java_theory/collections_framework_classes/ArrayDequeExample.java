@@ -2,6 +2,15 @@ package java_theory.collections_framework_classes;
 
 import java.util.ArrayDeque;
 
+/*
+
+ArrayDeque
+
+Implements the Deque interface. A resizable array-based double-ended queue (deque).
+Can be used as a stack (LIFO) or a queue (FIFO), often preferred over Stack and LinkedList due to better performance.
+
+*/
+
 public class ArrayDequeExample {
     public static void main(String[] args) {
         // Create a new ArrayDeque of Strings (can be used as a stack or queue)

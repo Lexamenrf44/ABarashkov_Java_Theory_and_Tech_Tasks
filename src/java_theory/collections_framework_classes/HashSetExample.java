@@ -2,6 +2,15 @@ package java_theory.collections_framework_classes;
 
 import java.util.HashSet;
 
+/*
+
+HashSet
+
+Implements the Set interface. Stores unique elements without maintaining any order.
+Based on a hash table; operations like add, remove, and contains have constant time complexity on average.
+
+*/
+
 public class HashSetExample {
     public static void main(String[] args) {
         // Create a new HashSet of integers
