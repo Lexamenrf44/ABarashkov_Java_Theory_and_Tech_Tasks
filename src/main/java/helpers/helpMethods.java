@@ -16,4 +16,16 @@ public class helpMethods {
 
         return max;  // Return the largest number found
     }
+
+    // Method to find the previous number in an array for a given index
+    public static int findPrevious(int[] array, int index) {
+        int previous = array[0];  // Assume the first element is the largest for now
+
+        // Check if the current index is greater than 0 (to ensure there is a previous number)
+        if (index > 0) {
+            return array[index - 1];  // Return the previous number
+        } else {
+            return -1;  // Return -1 if no previous number exists (i.e., index is 0)
+        }
+    }
 }
