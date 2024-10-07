@@ -9,7 +9,7 @@ public class SearchInArrayViaMethodCall {
         int[] arr = {7, 2, 10, 5, 3};  // Declare and initialize an array of integers
 
         // Via method call to find the max number
-        int max = helpMethods.findMax(arr);
+        int max = HelpMethods.findMax(arr);
 
         // Print the result
         System.out.println("The maximum number is: " + max);  // Output the maximum number

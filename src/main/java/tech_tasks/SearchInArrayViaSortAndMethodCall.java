@@ -15,7 +15,7 @@ public class SearchInArrayViaSortAndMethodCall {
         int currentIndex = 4;  // Assume we're looking for the previous number at index 4 (which is 6)
 
         // Find the previous number
-        int previous = helpMethods.findPrevious(arr, currentIndex);
+        int previous = HelpMethods.findPrevious(arr, currentIndex);
 
         // Find the maximum value after sorting
         int max = arr[arr.length - 1];  // The maximum value is the last element after sorting
