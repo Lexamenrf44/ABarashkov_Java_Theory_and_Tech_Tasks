@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.PriorityQueue;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Useful for scenarios where you need to frequently access the element with the hi
 
 */
 
-public class PriorityQueueExample {
+public class PriorityQueue {
     public static void main(String[] args) {
         // Create a new PriorityQueue of integers (min-heap by default)
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        java.util.PriorityQueue<Integer> priorityQueue = new java.util.PriorityQueue<>();
 
         // Add elements to the queue
         priorityQueue.add(10);  // Adds 10

@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.LinkedList;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Suitable for frequent insertion and deletion of elements, as it does not require
 
 */
 
-public class LinkedListExample {
+public class LinkedList {
     public static void main(String[] args) {
         // Create a new LinkedList of Strings
-        LinkedList<String> linkedList = new LinkedList<>();
+        java.util.LinkedList<String> linkedList = new java.util.LinkedList<>();
 
         // Add elements to the list
         linkedList.add("First");   // Adds "First" at the end

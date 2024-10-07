@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.TreeMap;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Internally uses a Red-Black Tree, and guarantees O(log n) time complexity for op
 
 */
 
-public class TreeMapExample {
+public class TreeMap {
     public static void main(String[] args) {
         // Create a new TreeMap (stores key-value pairs in sorted order of keys)
-        TreeMap<Integer, String> treeMap = new TreeMap<>();
+        java.util.TreeMap<Integer, String> treeMap = new java.util.TreeMap<>();
 
         // Add key-value pairs to the map
         treeMap.put(3, "Three");  // Adds key 3 with value "Three"

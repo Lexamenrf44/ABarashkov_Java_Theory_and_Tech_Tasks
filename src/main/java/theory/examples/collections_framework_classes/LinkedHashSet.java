@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.LinkedHashSet;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Provides predictable iteration order, unlike HashSet.
 
 */
 
-public class LinkedHashSetExample {
+public class LinkedHashSet {
     public static void main(String[] args) {
         // Create a new LinkedHashSet of integers (maintains insertion order)
-        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
+        java.util.LinkedHashSet<Integer> linkedHashSet = new java.util.LinkedHashSet<>();
 
         // Add elements to the set
         linkedHashSet.add(10);

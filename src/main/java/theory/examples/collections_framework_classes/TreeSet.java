@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.TreeSet;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Internally uses a Red-Black Tree; slower than HashSet for basic operations but k
 
 */
 
-public class TreeSetExample {
+public class TreeSet {
     public static void main(String[] args) {
         // Create a new TreeSet of Strings (sorted automatically)
-        TreeSet<String> treeSet = new TreeSet<>();
+        java.util.TreeSet<String> treeSet = new java.util.TreeSet<>();
 
         // Add elements to the set
         treeSet.add("Banana");

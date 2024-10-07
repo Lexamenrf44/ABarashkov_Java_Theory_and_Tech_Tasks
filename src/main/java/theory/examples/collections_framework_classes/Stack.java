@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.Stack;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -12,10 +10,10 @@ Often replaced by the Deque interface and its implementations (ArrayDeque, Linke
 
 */
 
-public class StackExample {
+public class Stack {
     public static void main(String[] args) {
         // Create a new Stack of integers
-        Stack<Integer> stack = new Stack<>();
+        java.util.Stack<Integer> stack = new java.util.Stack<>();
 
         // Push elements onto the stack (LIFO)
         stack.push(10);  // Pushes 10 onto the stack

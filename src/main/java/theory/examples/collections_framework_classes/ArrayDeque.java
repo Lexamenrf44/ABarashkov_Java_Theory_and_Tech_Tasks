@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.ArrayDeque;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Can be used as a stack (LIFO) or a queue (FIFO), often preferred over Stack and 
 
 */
 
-public class ArrayDequeExample {
+public class ArrayDeque {
     public static void main(String[] args) {
         // Create a new ArrayDeque of Strings (can be used as a stack or queue)
-        ArrayDeque<String> deque = new ArrayDeque<>();
+        java.util.ArrayDeque<String> deque = new java.util.ArrayDeque<>();
 
         // Add elements to the front and back
         deque.addFirst("First");  // Adds "First" to the front

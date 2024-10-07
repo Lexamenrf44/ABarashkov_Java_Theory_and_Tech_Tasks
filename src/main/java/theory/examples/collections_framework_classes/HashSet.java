@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.HashSet;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Based on a hash table; operations like add, remove, and contains have constant t
 
 */
 
-public class HashSetExample {
+public class HashSet {
     public static void main(String[] args) {
         // Create a new HashSet of integers
-        HashSet<Integer> hashSet = new HashSet<>();
+        java.util.HashSet<Integer> hashSet = new java.util.HashSet<>();
 
         // Add elements to the set
         hashSet.add(1);  // Adds the integer 1

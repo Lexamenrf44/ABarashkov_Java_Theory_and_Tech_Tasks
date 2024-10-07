@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.LinkedHashMap;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Useful when you want to iterate over entries in the order they were inserted.
 
 */
 
-public class LinkedHashMapExample {
+public class LinkedHashMap {
     public static void main(String[] args) {
         // Create a new LinkedHashMap (maintains insertion order of key-value pairs)
-        LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
+        java.util.LinkedHashMap<String, Integer> linkedHashMap = new java.util.LinkedHashMap<>();
 
         // Add key-value pairs to the map
         linkedHashMap.put("A", 100);  // Adds key "A" with value 100

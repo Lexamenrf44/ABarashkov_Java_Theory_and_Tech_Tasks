@@ -1,6 +1,4 @@
-package main.java.theory.collections_framework_classes;
-
-import java.util.Vector;
+package main.java.theory.examples.collections_framework_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Historically used before ArrayList, now generally avoided unless thread safety i
 
 */
 
-public class VectorExample {
+public class Vector {
     public static void main(String[] args) {
         // Create a new Vector of Strings
-        Vector<String> vector = new Vector<>();
+        java.util.Vector<String> vector = new java.util.Vector<>();
 
         // Add elements to the vector
         vector.add("First");   // Adds "First"
