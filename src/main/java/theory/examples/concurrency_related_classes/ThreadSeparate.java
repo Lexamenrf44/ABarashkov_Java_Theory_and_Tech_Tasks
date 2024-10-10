@@ -2,24 +2,24 @@ package main.java.theory.examples.concurrency_related_classes;
 
 /*
 
-Thread
+ThreadSeparate
 
 Represents a single thread of execution in a program.
 Provides methods to start, stop, and manage threads.
 
 */
 
-public class Thread extends java.lang.Thread {
+public class ThreadSeparate extends java.lang.Thread {
     // Override the run method to define the thread's task
     public void run() {
-        System.out.println("Thread is running");
+        System.out.println("ThreadSeparate is running");
     }
 
     public static void main(String[] args) {
         // Create a new thread
-        Thread thread = new Thread();
+        ThreadSeparate thread = new ThreadSeparate();
 
         // Start the thread
-        thread.start();  // Output: Thread is running
+        thread.start();  // Output: ThreadSeparate is running
     }
 }

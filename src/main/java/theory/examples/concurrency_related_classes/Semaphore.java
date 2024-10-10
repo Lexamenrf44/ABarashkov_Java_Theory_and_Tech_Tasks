@@ -19,18 +19,18 @@ public class Semaphore {
             new Thread(() -> {
                 try {
                     // Acquire a permit before accessing the resource
-                    System.out.println("Thread " + threadNumber + " is waiting for a permit.");
+                    System.out.println("ThreadSeparate " + threadNumber + " is waiting for a permit.");
                     semaphore.acquire();  // Waits if no permits are available
-                    System.out.println("Thread " + threadNumber + " got a permit and is accessing the resource.");
+                    System.out.println("ThreadSeparate " + threadNumber + " got a permit and is accessing the resource.");
 
                     // Simulate resource access with a sleep
-                    Thread.sleep(1000);
+                    ThreadSeparate.sleep(1000);
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
                     // Release the permit after finishing
-                    System.out.println("Thread " + threadNumber + " has released the permit.");
+                    System.out.println("ThreadSeparate " + threadNumber + " has released the permit.");
                     semaphore.release();
                 }
             }).start();

@@ -19,7 +19,7 @@ public class Runnable implements java.lang.Runnable {
         // Create a Runnable instance
         Runnable runnable = new Runnable();
 
-        // Create a Thread with the Runnable instance
+        // Create a ThreadSeparate with the Runnable instance
         Thread thread = new Thread(runnable);
 
         // Start the thread
