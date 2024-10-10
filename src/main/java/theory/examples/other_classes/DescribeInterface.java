@@ -1,4 +1,4 @@
-package main.java.theory.other_examples_of_classes;
+package main.java.theory.examples.other_classes;
 
 /*
 
@@ -42,7 +42,7 @@ class Car implements Vehicle {
 }
 
 // Main class to demonstrate interface usage
-public class DescribeInterfaceExample {
+public class DescribeInterface {
     public static void main(String[] args) {
         // Create an instance of the Car class with name "Tesla"
         Vehicle car = new Car("Tesla");

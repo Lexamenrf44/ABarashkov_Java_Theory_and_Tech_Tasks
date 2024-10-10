@@ -1,4 +1,4 @@
-package main.java.theory.other_key_java_classes;
+package main.java.theory.examples.other_key_java_classes;
 
 /*
 
@@ -9,13 +9,13 @@ Used for handling text, and widely used in Java applications due to its immutabi
 
 */
 
-public class StringExample {
-    public static void main(String[] args) {
+public class String {
+    public static void main(java.lang.String[] args) {
         // Create a new String
-        String str = "Hello";
+        java.lang.String str = "Hello";
 
         // Concatenate two strings
-        String str2 = str.concat(" World");
+        java.lang.String str2 = str.concat(" World");
 
         // Print the concatenated string
         System.out.println(str2);  // Output: Hello World

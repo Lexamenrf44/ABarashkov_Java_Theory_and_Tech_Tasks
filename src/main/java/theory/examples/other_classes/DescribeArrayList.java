@@ -1,4 +1,4 @@
-package main.java.theory.other_examples_of_classes;
+package main.java.theory.examples.other_classes;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ It is part of the java.util package
 
 */
 
-public class DescribeArrayListExample {
+public class DescribeArrayList {
     public static void main(String[] args) {
         // Create an ArrayList of String type to store a list of fruits
         ArrayList<String> fruits = new ArrayList<>();

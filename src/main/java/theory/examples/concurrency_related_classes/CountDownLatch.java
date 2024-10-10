@@ -1,6 +1,4 @@
-package main.java.theory.concurrency_related_classes;
-
-import java.util.concurrent.CountDownLatch;
+package main.java.theory.examples.concurrency_related_classes;
 
 /*
 
@@ -11,10 +9,10 @@ It is often used to make one thread wait for other threads.
 
 */
 
-public class CountDownLatchExample {
+public class CountDownLatch {
     public static void main(String[] args) throws InterruptedException {
         // Create a CountDownLatch initialized with a count of 3
-        CountDownLatch latch = new CountDownLatch(3);
+        java.util.concurrent.CountDownLatch latch = new java.util.concurrent.CountDownLatch(3);
 
         // Create and start 3 threads that will perform some work and then count down the latch
         for (int i = 1; i <= 3; i++) {

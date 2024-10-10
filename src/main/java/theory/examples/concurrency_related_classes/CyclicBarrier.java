@@ -1,6 +1,4 @@
-package main.java.theory.concurrency_related_classes;
-
-import java.util.concurrent.CyclicBarrier;
+package main.java.theory.examples.concurrency_related_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Once all threads have called await(), they proceed together.
 
 */
 
-public class CyclicBarrierExample {
+public class CyclicBarrier {
     public static void main(String[] args) {
         // Create a CyclicBarrier that will trip (open) when 3 threads reach it
-        CyclicBarrier barrier = new CyclicBarrier(3, () -> {
+        java.util.concurrent.CyclicBarrier barrier = new java.util.concurrent.CyclicBarrier(3, () -> {
             // This task will be executed when the last thread reaches the barrier
             System.out.println("All parties have reached the barrier. Proceeding to the next stage.");
         });

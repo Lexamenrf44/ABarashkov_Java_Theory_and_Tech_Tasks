@@ -1,7 +1,7 @@
-package main.java.theory.encapsulation_example;
+package main.java.theory.examples.encapsulation;
 
 // 1. Define the class `Person`
-public class EncapsulationPersonPublicClassExample {
+public class EncapsulationPersonPublicClass {
 
     // 2. Declare a private field 'name' (Encapsulation: the data is hidden)
     private String name;
@@ -10,7 +10,7 @@ public class EncapsulationPersonPublicClassExample {
     private int age;
 
     // 4. Constructor to initialize the Person object
-    public EncapsulationPersonPublicClassExample(String name, int age) {
+    public EncapsulationPersonPublicClass(String name, int age) {
         // 5. Set the value of the 'name' attribute
         this.name = name;
 

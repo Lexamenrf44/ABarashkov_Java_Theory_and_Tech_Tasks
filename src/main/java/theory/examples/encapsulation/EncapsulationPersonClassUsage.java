@@ -1,9 +1,9 @@
-package main.java.theory.encapsulation_example;
+package main.java.theory.examples.encapsulation;
 
-public class EncapsulationPersonClassUsageExample {
+public class EncapsulationPersonClassUsage {
     public static void main(String[] args) {
         // Create a Person object using the constructor
-        EncapsulationPersonPublicClassExample person = new EncapsulationPersonPublicClassExample("John", 25);
+        EncapsulationPersonPublicClass person = new EncapsulationPersonPublicClass("John", 25);
 
         // Access the private field 'name' using the public getter method
         System.out.println(person.getName());  // Output: John

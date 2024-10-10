@@ -1,4 +1,4 @@
-package main.java.theory.utility_classes;
+package main.java.theory.examples.utility_classes;
 
 /*
 
@@ -8,15 +8,15 @@ Provides static methods for performing basic mathematical operations, such as Ma
 
 */
 
-public class MathExample {
+public class Math {
     public static void main(String[] args) {
         // Compute the power of a number
-        double result = Math.pow(2, 3);  // 2 raised to the power of 3
+        double result = java.lang.Math.pow(2, 3);  // 2 raised to the power of 3
 
         // Print the result
         System.out.println(result);  // Output: 8.0
 
         // Compute the square root of a number
-        System.out.println(Math.sqrt(16));  // Output: 4.0
+        System.out.println(java.lang.Math.sqrt(16));  // Output: 4.0
     }
 }

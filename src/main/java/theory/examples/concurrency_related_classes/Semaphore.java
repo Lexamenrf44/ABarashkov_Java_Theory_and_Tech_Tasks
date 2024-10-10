@@ -1,6 +1,4 @@
-package main.java.theory.concurrency_related_classes;
-
-import java.util.concurrent.Semaphore;
+package main.java.theory.examples.concurrency_related_classes;
 
 /*
 
@@ -10,10 +8,10 @@ Controls access to a resource with a fixed number of permits, allowing a limited
 
 */
 
-public class SemaphoreExample {
+public class Semaphore {
     public static void main(String[] args) {
         // Create a Semaphore with 2 permits, allowing only 2 threads to access a resource at a time
-        Semaphore semaphore = new Semaphore(2);
+        java.util.concurrent.Semaphore semaphore = new java.util.concurrent.Semaphore(2);
 
         // Simulate 5 threads trying to access a resource
         for (int i = 1; i <= 5; i++) {

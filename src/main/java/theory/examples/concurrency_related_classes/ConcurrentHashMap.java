@@ -1,6 +1,4 @@
-package main.java.theory.concurrency_related_classes;
-
-import java.util.concurrent.ConcurrentHashMap;
+package main.java.theory.examples.concurrency_related_classes;
 
 /*
 
@@ -11,10 +9,10 @@ Provides efficient, thread-safe access to the map without locking the entire str
 
 */
 
-public class ConcurrentHashMapExample {
+public class ConcurrentHashMap {
     public static void main(String[] args) {
         // Create a ConcurrentHashMap of String keys and Integer values
-        ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+        java.util.concurrent.ConcurrentHashMap<String, Integer> map = new java.util.concurrent.ConcurrentHashMap<>();
 
         // Insert key-value pairs into the map
         map.put("One", 1);     // Adds key "One" with value 1

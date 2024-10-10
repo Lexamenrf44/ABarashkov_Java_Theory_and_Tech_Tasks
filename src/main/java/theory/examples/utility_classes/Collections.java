@@ -1,7 +1,6 @@
-package main.java.theory.utility_classes;
+package main.java.theory.examples.utility_classes;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /*
 
@@ -12,7 +11,7 @@ Includes methods like sort(), binarySearch(), reverse(), shuffle(), and more.
 
 */
 
-public class CollectionsExample {
+public class Collections {
     public static void main(String[] args) {
         // Create a new ArrayList of integers
         ArrayList<Integer> list = new ArrayList<>();
@@ -23,11 +22,11 @@ public class CollectionsExample {
         list.add(2);
 
         // Sort the list
-        Collections.sort(list);  // Sorts in ascending order
+        java.util.Collections.sort(list);  // Sorts in ascending order
         System.out.println(list);  // Output: [1, 2, 3]
 
         // Reverse the list
-        Collections.reverse(list);  // Reverses the order
+        java.util.Collections.reverse(list);  // Reverses the order
         System.out.println(list);  // Output: [3, 2, 1]
     }
 }

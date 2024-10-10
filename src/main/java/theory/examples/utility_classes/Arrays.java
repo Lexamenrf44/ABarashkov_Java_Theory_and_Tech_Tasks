@@ -1,6 +1,4 @@
-package main.java.theory.utility_classes;
-
-import java.util.Arrays;
+package main.java.theory.examples.utility_classes;
 
 /*
 
@@ -10,15 +8,15 @@ A utility class for working with arrays, including static methods for sorting, s
 
 */
 
-public class ArraysExample {
+public class Arrays {
     public static void main(String[] args) {
         // Create an array of integers
         int[] numbers = {3, 5, 1, 2, 4};
 
         // Sort the array
-        Arrays.sort(numbers);  // Sorts in ascending order
+        java.util.Arrays.sort(numbers);  // Sorts in ascending order
 
         // Print the sorted array
-        System.out.println(Arrays.toString(numbers));  // Output: [1, 2, 3, 4, 5]
+        System.out.println(java.util.Arrays.toString(numbers));  // Output: [1, 2, 3, 4, 5]
     }
 }

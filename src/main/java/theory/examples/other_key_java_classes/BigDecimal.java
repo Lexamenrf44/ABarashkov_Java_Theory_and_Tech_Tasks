@@ -1,6 +1,4 @@
-package main.java.theory.other_key_java_classes;
-
-import java.math.BigDecimal;
+package main.java.theory.examples.other_key_java_classes;
 
 /*
 
@@ -11,14 +9,14 @@ Often used for high-precision calculations, such as those required in financial 
 
 */
 
-public class BigDecimalExample {
+public class BigDecimal {
     public static void main(String[] args) {
         // Create BigDecimal values
-        BigDecimal price = new BigDecimal("19.99");
-        BigDecimal quantity = new BigDecimal("2");
+        java.math.BigDecimal price = new java.math.BigDecimal("19.99");
+        java.math.BigDecimal quantity = new java.math.BigDecimal("2");
 
         // Multiply the BigDecimal values
-        BigDecimal total = price.multiply(quantity);
+        java.math.BigDecimal total = price.multiply(quantity);
 
         // Print the total
         System.out.println(total);  // Output: 39.98

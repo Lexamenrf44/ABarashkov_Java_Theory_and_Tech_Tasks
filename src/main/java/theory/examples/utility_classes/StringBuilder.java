@@ -1,4 +1,4 @@
-package main.java.theory.utility_classes;
+package main.java.theory.examples.utility_classes;
 
 /*
 
@@ -10,10 +10,10 @@ StringBuffer is thread-safe, with synchronized methods for concurrent access.
 
 */
 
-public class StringBuilderExample {
+public class StringBuilder {
     public static void main(String[] args) {
         // Create a new StringBuilder with an initial string
-        StringBuilder sb = new StringBuilder("Hello");
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("Hello");
 
         // Append text to the StringBuilder
         sb.append(" World");  // Adds " World" to "Hello"

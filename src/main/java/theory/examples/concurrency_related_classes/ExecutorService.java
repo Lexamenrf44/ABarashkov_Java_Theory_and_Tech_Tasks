@@ -1,6 +1,5 @@
-package main.java.theory.concurrency_related_classes;
+package main.java.theory.examples.concurrency_related_classes;
 
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /*
@@ -13,10 +12,10 @@ Provides methods for executing tasks, managing their lifecycle, and shutting dow
 
 */
 
-public class ExecutorServiceExample {
+public class ExecutorService {
     public static void main(String[] args) {
         // Create a fixed thread pool with 2 threads
-        ExecutorService executor = Executors.newFixedThreadPool(2);
+        java.util.concurrent.ExecutorService executor = Executors.newFixedThreadPool(2);
 
         // Submit tasks to the executor
         executor.submit(() -> System.out.println("Task 1 is running"));

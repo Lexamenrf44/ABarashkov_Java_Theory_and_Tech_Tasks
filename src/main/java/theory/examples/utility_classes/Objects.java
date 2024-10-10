@@ -1,6 +1,4 @@
-package main.java.theory.utility_classes;
-
-import java.util.Objects;
+package main.java.theory.examples.utility_classes;
 
 /*
 
@@ -11,16 +9,16 @@ Commonly used for null-safe comparisons and handling.
 
 */
 
-public class ObjectsExample {
+public class Objects {
     public static void main(String[] args) {
         String s1 = null;
         String s2 = "Hello";
 
         // Safe comparison of two objects
-        System.out.println(Objects.equals(s1, s2));  // Output: false
+        System.out.println(java.util.Objects.equals(s1, s2));  // Output: false
 
         // Check if an object is null
-        System.out.println(Objects.isNull(s1));  // Output: true
+        System.out.println(java.util.Objects.isNull(s1));  // Output: true
     }
 }
 

@@ -1,4 +1,4 @@
-package main.java.theory.concurrency_related_classes;
+package main.java.theory.examples.concurrency_related_classes;
 
 /*
 
@@ -9,7 +9,7 @@ Commonly used for defining a task in multithreaded applications.
 
 */
 
-public class RunnableExample implements Runnable {
+public class Runnable implements java.lang.Runnable {
     // Implement the run method to define the thread's task
     public void run() {
         System.out.println("Runnable is running");
@@ -17,7 +17,7 @@ public class RunnableExample implements Runnable {
 
     public static void main(String[] args) {
         // Create a Runnable instance
-        RunnableExample runnable = new RunnableExample();
+        Runnable runnable = new Runnable();
 
         // Create a Thread with the Runnable instance
         Thread thread = new Thread(runnable);
