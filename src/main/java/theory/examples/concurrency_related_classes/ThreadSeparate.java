@@ -12,7 +12,7 @@ Provides methods to start, stop, and manage threads.
 public class ThreadSeparate extends java.lang.Thread {
     // Override the run method to define the thread's task
     public void run() {
-        System.out.println("ThreadSeparate is running");
+        System.out.println("Thread is running");
     }
 
     public static void main(String[] args) {
