@@ -122,17 +122,10 @@ public class HelpMethods {
 
     public static boolean validateStandardTime(String time) {
 
-        // Extract the hours (HH) and minutes (MM) from the string
-        int hours = Integer.parseInt(time.substring(0, 2)); // Parse the first two characters as hours
-        int minutes = Integer.parseInt(time.substring(3, 5)); // Parse the last two characters as minutes
-
-        // Check if hours are valid in 12-hour format (01 to 12)
-        boolean isValidHour = hours >= 1 && hours <= 12;
-
-        // Check if minutes are valid (00 to 59)
-        boolean isValidMinute = minutes >= 0 && minutes <= 59;
-
-        // Return true if both hours and minutes are valid
-        return isValidHour && isValidMinute;
+// Parse the hours and minutes, and check their validity in one return statement
+        return (time.length() == 5) &&
+                (time.charAt(2) == ':') &&  // Ensure the third character is a colon
+                (Integer.parseInt(time.substring(0, 2)) >= 1 && Integer.parseInt(time.substring(0, 2)) <= 12) && // Valid hours (01-12)
+                (Integer.parseInt(time.substring(3, 5)) >= 0 && Integer.parseInt(time.substring(3, 5)) <= 59); // Valid minutes (00-59)
     }
 }
