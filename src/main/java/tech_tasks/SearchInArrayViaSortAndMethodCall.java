@@ -5,6 +5,7 @@ import java.util.*;
 
 public class SearchInArrayViaSortAndMethodCall {
     public static void main(String[] args) {
+
         // Example array
         int[] arr = {7, 2, 10, 5, 3};  // Declare and initialize an array of integers
 
