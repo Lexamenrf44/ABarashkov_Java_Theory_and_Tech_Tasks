@@ -53,7 +53,7 @@ public class HelpMethods {
             // Display how many times "Buzz" was printed.
 
             System.out.println("FizzBuzz was printed " + fizzBuzzCount + " times.");
-            // Display how many times "FizzBuzz" was printed.        }
+            // Display how many times "FizzBuzz" was printed.
         }
     }
 
@@ -108,5 +108,31 @@ public class HelpMethods {
 
         // Return an empty array if no solution is found (shouldn't happen given problem constraints)
         return new int[] {};
+    }
+
+    public static boolean validateRailwayTime(String time) {
+
+        // Parse hours and minutes directly and return the result of range checks
+        int hours = Integer.parseInt(time.substring(0, 2));
+        int minutes = Integer.parseInt(time.substring(3, 5));
+
+        // Return true only if hours are between 00-23 and minutes are between 00-59
+        return hours >= 0 && hours <= 23 && minutes >= 0 && minutes <= 59;
+    }
+
+    public static boolean validateStandardTime(String time) {
+
+        // Extract the hours (HH) and minutes (MM) from the string
+        int hours = Integer.parseInt(time.substring(0, 2)); // Parse the first two characters as hours
+        int minutes = Integer.parseInt(time.substring(3, 5)); // Parse the last two characters as minutes
+
+        // Check if hours are valid in 12-hour format (01 to 12)
+        boolean isValidHour = hours >= 1 && hours <= 12;
+
+        // Check if minutes are valid (00 to 59)
+        boolean isValidMinute = minutes >= 0 && minutes <= 59;
+
+        // Return true if both hours and minutes are valid
+        return isValidHour && isValidMinute;
     }
 }
