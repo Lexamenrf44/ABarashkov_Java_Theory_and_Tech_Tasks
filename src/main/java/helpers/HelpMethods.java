@@ -122,10 +122,37 @@ public class HelpMethods {
 
     public static boolean validateStandardTime(String time) {
 
-// Parse the hours and minutes, and check their validity in one return statement
+        // Parse the hours and minutes, and check their validity in one return statement
         return (time.length() == 5) &&
                 (time.charAt(2) == ':') &&  // Ensure the third character is a colon
                 (Integer.parseInt(time.substring(0, 2)) >= 1 && Integer.parseInt(time.substring(0, 2)) <= 12) && // Valid hours (01-12)
                 (Integer.parseInt(time.substring(3, 5)) >= 0 && Integer.parseInt(time.substring(3, 5)) <= 59); // Valid minutes (00-59)
+    }
+
+    public static class CalculateArrayDifference {
+
+        // Method to find the difference between maximum and minimum elements
+        public int solution(int[] inputArray) {
+            // Initialize the indices of minimum and maximum elements
+            int indexOfMinimum = 0;
+            int indexOfMaximum = 0;
+
+            // Traverse the array to find indices of the minimum and maximum values
+            for (int i = 1; i < inputArray.length; i++) {
+                // Check if the current element is smaller than the current minimum
+                if (inputArray[i] < inputArray[indexOfMinimum]) {
+                    indexOfMinimum = i;
+                }
+
+                // Check if the current element is greater than the current maximum
+                if (inputArray[i] > inputArray[indexOfMaximum]) {
+                    indexOfMaximum = i;
+                }
+            }
+
+            // Return the difference between the maximum and minimum values
+            return inputArray[indexOfMaximum] - inputArray[indexOfMinimum];
+        }
+
     }
 }
