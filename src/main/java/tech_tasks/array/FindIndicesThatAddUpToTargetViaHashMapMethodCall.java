@@ -2,7 +2,7 @@ package main.java.tech_tasks.array;
 
 import main.java.helpers.*;
 
-public class FindIndicesThatAddUpToTargetViaMethodCall {
+public class FindIndicesThatAddUpToTargetViaHashMapMethodCall {
     public static void main(String[] args) {
         // Example input
         int[] nums = {2, 7, 11, 15};
