@@ -1,4 +1,10 @@
-// Declare that this class belongs to the package `main.java.tech_tasks`, which is used to organize related classes.
+/*
+
+Declare that this class belongs to the package `main.java.tech_tasks`,
+which is used to organize related classes
+
+*/
+
 package main.java.tech_tasks;
 
 import main.java.helpers.*;
