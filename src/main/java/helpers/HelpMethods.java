@@ -108,6 +108,26 @@ public class HelpMethods {
         return new int[] {};
     }
 
+    public static int[] findTwoSumBruteForce(int[] nums, int target) {
+        // Loop through each element in the array with index i
+        for (int i = 0; i < nums.length; i++) {
+
+            // For each element at index i, loop through the remaining elements with index j
+            for (int j = i + 1; j < nums.length; j++) {
+
+                // Check if the sum of the elements at indices i and j equals the target
+                if (nums[i] + nums[j] == target) {
+
+                    // If a match is found, return the indices of the two elements as an array
+                    return new int[] { i, j };
+                }
+            }
+        }
+
+        // If no two elements add up to the target, return an empty array
+        return new int[] {};  // Return empty if no solution found
+    }
+
     public static boolean validateRailwayTime(String time) {
 
         // Parse hours and minutes directly and return the result of range checks
