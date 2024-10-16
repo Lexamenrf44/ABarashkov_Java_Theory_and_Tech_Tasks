@@ -1,15 +1,15 @@
-package main.java.tech_tasks;
+package main.java.tech_tasks.array;
 
 import main.java.helpers.*;
 
-public class SearchIndicesInArrayThatAddUpToTarget {
+public class FindIndicesThatAddUpToTargetViaMethodCall {
     public static void main(String[] args) {
         // Example input
         int[] nums = {2, 7, 11, 15};
         int target = 9;
 
         // Call the method and get the result
-        int[] result = HelpMethods.findTwoSum(nums, target);
+        int[] result = HelpMethods.findTwoSumHashMap(nums, target);
 
         // Output the result
         if (result.length == 2) {

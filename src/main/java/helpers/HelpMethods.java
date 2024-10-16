@@ -58,7 +58,7 @@ public class HelpMethods {
     }
 
     // Method to find the maximum number in an array
-    public static int findMax(int[] array) {
+    public static int findMaxBruteForce(int[] array) {
 
         int max = array[0];  // Assume the first element is the largest for now
 
@@ -76,8 +76,6 @@ public class HelpMethods {
     // Method to find the previous number in an array for a given index
     public static int findPrevious(int[] array, int index) {
 
-        int previous = array[0];  // Assume the first element is the largest for now
-
         // Check if the current index is greater than 0 (to ensure there is a previous number)
         if (index > 0) {
             return array[index - 1];  // Return the previous number
@@ -87,7 +85,7 @@ public class HelpMethods {
     }
 
     // Method to find two numbers that add up to the target
-    public static int[] findTwoSum(int[] nums, int target) {
+    public static int[] findTwoSumHashMap(int[] nums, int target) {
 
         // Create a HashMap to store the number and its index
         HashMap<Integer, Integer> map = new HashMap<>();

@@ -1,4 +1,4 @@
-package main.java.tech_tasks;
+package main.java.tech_tasks.string;
 
 import java.util.*;
 import java.util.function.Function;
