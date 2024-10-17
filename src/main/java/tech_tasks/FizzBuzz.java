@@ -25,6 +25,6 @@ public class FizzBuzz {
     public static void main(String[] args) {
 
         // Calls the static method `printFizzBuzz()` which contains the logic for FizzBuzz.
-        HelpMethods.printFizzBuzz();
+        HelpMethods.printFizzBuzzWithCounter();
     }
 }
