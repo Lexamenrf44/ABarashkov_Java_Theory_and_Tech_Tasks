@@ -1,4 +1,4 @@
-package main.java.tech_tasks.string;
+package tech_tasks.string;
 
 import java.util.*;
 import java.util.stream.Collectors;

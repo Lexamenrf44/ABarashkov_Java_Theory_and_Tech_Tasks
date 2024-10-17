@@ -2,6 +2,12 @@ package tech_tasks.array;
 
 import helpers.*;
 
+/*
+
+Find indices in array that add up to target value calling a brute force method
+
+*/
+
 public class FindIndicesThatAddUpToTargetViaBruteForceMethodCall {
     public static void main(String[] args) {
 
@@ -14,9 +20,10 @@ public class FindIndicesThatAddUpToTargetViaBruteForceMethodCall {
 
         // Output the result
         if (result.length == 2) {
+            assert true;
             System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
         } else {
-            System.out.println("No solution found.");
+            assert false : "No index found.";
         }
     }
 }

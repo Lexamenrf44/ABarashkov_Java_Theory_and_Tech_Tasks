@@ -14,9 +14,10 @@ public class FindIndicesThatAddUpToTargetViaHashMapMethodCall {
 
         // Output the result
         if (result.length == 2) {
+            assert true;
             System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
         } else {
-            System.out.println("No solution found.");
+            assert false : "No index found.";
         }
     }
 }

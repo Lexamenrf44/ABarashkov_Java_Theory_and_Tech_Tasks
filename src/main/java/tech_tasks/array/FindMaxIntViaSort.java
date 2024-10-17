@@ -17,7 +17,11 @@ public class FindMaxIntViaSort {
         // Output the sorted array
         System.out.println("Sorted array: " + Arrays.toString(arr));
 
-        // Output the maximum value
-        System.out.println("The maximum number is: " + max);
+        if (max == 9) {
+            assert true;
+            System.out.println("Test passed! The maximum number is: " + max);
+        } else {
+            assert false : "Test failed! The maximum number is: " + max;
+        }
     }
 }

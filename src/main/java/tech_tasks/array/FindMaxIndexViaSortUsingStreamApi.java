@@ -17,7 +17,14 @@ public class FindMaxIndexViaSortUsingStreamApi {
         // Output the sorted array
         System.out.println("Sorted array: " + Arrays.toString(arr));
 
-        // Output the index of the maximum value
-        System.out.println("The index of the maximum number is: " + Arrays.binarySearch(arr, max));
+        int maxIndex = Arrays.binarySearch(arr, max);
+
+        // Assertion: Expecting the maximum value to be at index 2
+        if (maxIndex == 5) {
+            assert true;
+            System.out.println("Test passed! The index of the maximum number is: " + maxIndex);
+        } else {
+            assert false : "Test failed! Expected index to be 5, but got " + maxIndex;
+        }
     }
 }

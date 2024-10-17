@@ -6,23 +6,27 @@ import java.util.*;
 public class FindPreviousIntViaMethodCallInSortedArray {
     public static void main(String[] args) {
 
-        // Example array
-        int[] arr = {8, 6, 10, 4, 2};  // Declare and initialize an array of integers
+        // Declare and initialize an array of integers
+        int[] arr = {8, 6, 10, 4, 2};
 
-        // Sort the array in ascending order
-        Arrays.sort(arr);  // Sorts the array in place (modifies the original array)
+        // Sorts the array in place (modifies the original array)
+        Arrays.sort(arr);
 
-        // Example current index
-        // Can be set manually but what for
-        int currentIndex = arr.length - 1;  // Automatically set to last element's index
+        // Set index of maximum value
+        int maxIndex = arr.length - 1;
 
         // Find the previous number
-        int previous = HelpMethods.findPrevious(arr, currentIndex);
+        int previousValue = HelpMethods.findPrevious(arr, maxIndex);
 
         // Output the sorted array
         System.out.println("Sorted array: " + Arrays.toString(arr));
 
-        // Output the previous number
-        System.out.println("The previous number is: " + previous);
+        // Assertion to check if the previous index is correct
+        if (previousValue == 8) {
+            assert true;
+            System.out.println("Test passed! The previous value is: " + previousValue);
+        } else {
+            assert false : "Test failed! Expected previous value to be 8, but got: " + previousValue;
+        }
     }
 }
