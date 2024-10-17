@@ -5,7 +5,7 @@ import java.util.*;
 public class HelpMethods {
 
     // A static method named `printFizzBuzz` is defined. This method contains the loop that will implement the FizzBuzz logic.
-    public static void printFizzBuzz() {
+    public static void printFizzBuzzWithCounter() {
 
         // Initialize counters for Fizz, Buzz, and FizzBuzz.
         int fizzCount = 0;  // This variable will count how many times "Fizz" is printed.
@@ -147,30 +147,27 @@ public class HelpMethods {
                 (Integer.parseInt(time.substring(3, 5)) >= 0 && Integer.parseInt(time.substring(3, 5)) <= 59); // Valid minutes (00-59)
     }
 
-    public static class CalculateArrayDifference {
+    // Method to find the difference between maximum and minimum elements
+    public static int CalculateArrayDifference(int[] inputArray)  {
 
-        // Method to find the difference between maximum and minimum elements
-        public int solution(int[] inputArray) {
-            // Initialize the indices of minimum and maximum elements
-            int indexOfMinimum = 0;
-            int indexOfMaximum = 0;
+        // Initialize the indices of minimum and maximum elements
+        int indexOfMinimum = 0;
+        int indexOfMaximum = 0;
 
-            // Traverse the array to find indices of the minimum and maximum values
-            for (int i = 1; i < inputArray.length; i++) {
-                // Check if the current element is smaller than the current minimum
-                if (inputArray[i] < inputArray[indexOfMinimum]) {
-                    indexOfMinimum = i;
-                }
-
-                // Check if the current element is greater than the current maximum
-                if (inputArray[i] > inputArray[indexOfMaximum]) {
-                    indexOfMaximum = i;
-                }
+        // Traverse the array to find indices of the minimum and maximum values
+        for (int i = 1; i < inputArray.length; i++) {
+            // Check if the current element is smaller than the current minimum
+            if (inputArray[i] < inputArray[indexOfMinimum]) {
+                indexOfMinimum = i;
             }
 
-            // Return the difference between the maximum and minimum values
-            return inputArray[indexOfMaximum] - inputArray[indexOfMinimum];
+            // Check if the current element is greater than the current maximum
+            if (inputArray[i] > inputArray[indexOfMaximum]) {
+                indexOfMaximum = i;
+            }
         }
 
+        // Return the difference between the maximum and minimum values
+        return inputArray[indexOfMaximum] - inputArray[indexOfMinimum];
     }
 }
