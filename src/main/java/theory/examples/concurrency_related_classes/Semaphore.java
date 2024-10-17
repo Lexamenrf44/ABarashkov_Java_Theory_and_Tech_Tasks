@@ -1,4 +1,4 @@
-package main.java.theory.examples.concurrency_related_classes;
+package theory.examples.concurrency_related_classes;
 
 /*
 
@@ -24,7 +24,7 @@ public class Semaphore {
                     System.out.println("ThreadSeparate " + threadNumber + " got a permit and is accessing the resource.");
 
                     // Simulate resource access with a sleep
-                    ThreadSeparate.sleep(1000);
+                    Thread.sleep(1000);
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();

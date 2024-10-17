@@ -1,4 +1,4 @@
-package main.java.theory.examples.collections_framework_classes;
+package theory.examples.collections_framework_classes;
 
 /*
 

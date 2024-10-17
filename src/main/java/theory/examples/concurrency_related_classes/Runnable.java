@@ -1,4 +1,4 @@
-package main.java.theory.examples.concurrency_related_classes;
+package theory.examples.concurrency_related_classes;
 
 /*
 

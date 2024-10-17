@@ -1,6 +1,6 @@
-package main.java.tech_tasks;
+package tech_tasks;
 
-import main.java.helpers.*;
+import helpers.*;
 
 /*
 

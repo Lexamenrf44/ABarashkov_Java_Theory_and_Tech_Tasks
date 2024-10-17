@@ -1,6 +1,6 @@
-package main.java.tech_tasks.array;
+package tech_tasks.array;
 
-import main.java.helpers.*;
+import helpers.*;
 
 public class FindIndicesThatAddUpToTargetViaBruteForceMethodCall {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.tech_tasks.array;
+package tech_tasks.array;
 
 import java.util.*;
 

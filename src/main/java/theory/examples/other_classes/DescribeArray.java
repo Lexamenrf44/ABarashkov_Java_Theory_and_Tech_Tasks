@@ -1,4 +1,4 @@
-package main.java.theory.examples.other_classes;
+package theory.examples.other_classes;
 
 /*
 

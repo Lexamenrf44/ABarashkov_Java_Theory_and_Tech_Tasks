@@ -1,4 +1,4 @@
-package main.java.theory.examples.encapsulation;
+package theory.examples.encapsulation;
 
 public class EncapsulationPersonClassUsage {
     public static void main(String[] args) {

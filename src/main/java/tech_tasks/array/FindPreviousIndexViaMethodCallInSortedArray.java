@@ -1,6 +1,6 @@
-package main.java.tech_tasks.array;
+package tech_tasks.array;
 
-import main.java.helpers.HelpMethods;
+import helpers.*;
 
 import java.util.Arrays;
 

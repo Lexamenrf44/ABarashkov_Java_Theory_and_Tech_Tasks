@@ -5,9 +5,9 @@ which is used to organize related classes
 
 */
 
-package main.java.tech_tasks;
+package tech_tasks;
 
-import main.java.helpers.*;
+import helpers.*;
 
 /*
 

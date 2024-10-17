@@ -1,4 +1,4 @@
-package main.java.helpers;
+package helpers;
 
 import java.util.*;
 

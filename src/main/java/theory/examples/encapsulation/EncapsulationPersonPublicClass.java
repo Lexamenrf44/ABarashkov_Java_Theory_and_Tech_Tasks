@@ -1,4 +1,4 @@
-package main.java.theory.examples.encapsulation;
+package theory.examples.encapsulation;
 
 // 1. Define the class `Person`
 public class EncapsulationPersonPublicClass {

@@ -1,4 +1,4 @@
-package main.java.theory.examples.other_key_java_classes;
+package theory.examples.other_key_java_classes;
 
 /*
 
