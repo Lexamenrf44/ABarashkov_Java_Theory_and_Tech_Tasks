@@ -2,13 +2,18 @@ package tech_tasks.array;
 
 import helpers.*;
 
+/*
+
+Find maximum value in array calling a method
+
+*/
+
 public class FindMaxIntViaMethodCall {
+
     public static void main(String[] args) {
 
-        // Example array
-        int[] arr = {7, 2, 11, 5, 3};  // Declare and initialize an array of integers
+        int[] arr = {7, 2, 11, 5, 3};
 
-        // Via method call to find the max number
         int max = HelpMethods.findMaxBruteForce(arr);
 
         if (max == 10) {
