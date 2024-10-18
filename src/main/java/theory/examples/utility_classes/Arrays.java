@@ -9,7 +9,9 @@ A utility class for working with arrays, including static methods for sorting, s
 */
 
 public class Arrays {
+
     public static void main(String[] args) {
+
         // Create an array of integers
         int[] numbers = {3, 5, 1, 2, 4};
 

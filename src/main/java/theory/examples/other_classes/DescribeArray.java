@@ -11,7 +11,9 @@ All elements in an array must be of the same data type
 */
 
 public class DescribeArray {
+
     public static void main(String[] args) {
+
         // Declaring and initializing an array of integers
         int[] numbers = {10, 20, 30, 40, 50};
 

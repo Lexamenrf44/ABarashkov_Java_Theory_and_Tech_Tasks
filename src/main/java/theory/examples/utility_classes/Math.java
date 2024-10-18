@@ -9,7 +9,9 @@ Provides static methods for performing basic mathematical operations, such as Ma
 */
 
 public class Math {
+
     public static void main(String[] args) {
+
         // Compute the power of a number
         double result = java.lang.Math.pow(2, 3);  // 2 raised to the power of 3
 

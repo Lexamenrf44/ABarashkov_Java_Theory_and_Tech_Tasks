@@ -10,7 +10,9 @@ Historically used before ArrayList, now generally avoided unless thread safety i
 */
 
 public class Vector {
+
     public static void main(String[] args) {
+
         // Create a new Vector of Strings
         java.util.Vector<String> vector = new java.util.Vector<>();
 

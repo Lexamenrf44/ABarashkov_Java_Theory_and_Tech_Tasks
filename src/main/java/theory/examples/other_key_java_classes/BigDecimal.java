@@ -10,7 +10,9 @@ Often used for high-precision calculations, such as those required in financial 
 */
 
 public class BigDecimal {
+
     public static void main(String[] args) {
+
         // Create BigDecimal values
         java.math.BigDecimal price = new java.math.BigDecimal("19.99");
         java.math.BigDecimal quantity = new java.math.BigDecimal("2");

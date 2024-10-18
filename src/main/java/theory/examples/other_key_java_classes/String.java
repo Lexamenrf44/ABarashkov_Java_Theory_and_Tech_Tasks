@@ -10,7 +10,9 @@ Used for handling text, and widely used in Java applications due to its immutabi
 */
 
 public class String {
+
     public static void main(java.lang.String[] args) {
+
         // Create a new String
         java.lang.String str = "Hello";
 

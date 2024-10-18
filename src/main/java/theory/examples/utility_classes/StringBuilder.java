@@ -11,7 +11,9 @@ StringBuffer is thread-safe, with synchronized methods for concurrent access.
 */
 
 public class StringBuilder {
+
     public static void main(String[] args) {
+
         // Create a new StringBuilder with an initial string
         java.lang.StringBuilder sb = new java.lang.StringBuilder("Hello");
 

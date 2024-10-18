@@ -10,7 +10,9 @@ It is often used to make one thread wait for other threads.
 */
 
 public class CountDownLatch {
+
     public static void main(String[] args) throws InterruptedException {
+
         // Create a CountDownLatch initialized with a count of 3
         java.util.concurrent.CountDownLatch latch = new java.util.concurrent.CountDownLatch(3);
 

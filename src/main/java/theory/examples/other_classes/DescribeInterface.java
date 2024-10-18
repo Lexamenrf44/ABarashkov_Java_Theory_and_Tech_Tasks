@@ -12,6 +12,7 @@ Used to define behaviors (methods) that multiple classes can implement.
 
 // Define an interface named Vehicle
 interface Vehicle {
+
     // Abstract method, must be implemented by any class that implements this interface
     void start();  // Method to start the vehicle
 
@@ -21,6 +22,7 @@ interface Vehicle {
 
 // Create a class named Car that implements the Vehicle interface
 class Car implements Vehicle {
+
     private String name;  // Field to store the name of the car
 
     // Constructor to initialize the car name
@@ -43,7 +45,9 @@ class Car implements Vehicle {
 
 // Main class to demonstrate interface usage
 public class DescribeInterface {
+
     public static void main(String[] args) {
+
         // Create an instance of the Car class with name "Tesla"
         Vehicle car = new Car("Tesla");
 

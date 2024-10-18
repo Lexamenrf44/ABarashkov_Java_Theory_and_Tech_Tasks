@@ -11,7 +11,9 @@ Often replaced by the Deque interface and its implementations (ArrayDeque, Linke
 */
 
 public class Stack {
+
     public static void main(String[] args) {
+
         // Create a new Stack of integers
         java.util.Stack<Integer> stack = new java.util.Stack<>();
 

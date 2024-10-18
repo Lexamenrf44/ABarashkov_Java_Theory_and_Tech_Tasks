@@ -12,7 +12,9 @@ Includes methods like sort(), binarySearch(), reverse(), shuffle(), and more.
 */
 
 public class Collections {
+
     public static void main(String[] args) {
+
         // Create a new ArrayList of integers
         ArrayList<Integer> list = new ArrayList<>();
 

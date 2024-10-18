@@ -10,7 +10,9 @@ Internally uses a Red-Black Tree; slower than HashSet for basic operations but k
 */
 
 public class TreeSet {
+
     public static void main(String[] args) {
+
         // Create a new TreeSet of Strings (sorted automatically)
         java.util.TreeSet<String> treeSet = new java.util.TreeSet<>();
 

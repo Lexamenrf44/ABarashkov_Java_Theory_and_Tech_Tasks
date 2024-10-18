@@ -11,6 +11,7 @@ public class EncapsulationPersonPublicClass {
 
     // 4. Constructor to initialize the Person object
     public EncapsulationPersonPublicClass(String name, int age) {
+
         // 5. Set the value of the 'name' attribute
         this.name = name;
 

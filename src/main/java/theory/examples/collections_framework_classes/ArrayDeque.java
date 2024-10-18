@@ -10,7 +10,9 @@ Can be used as a stack (LIFO) or a queue (FIFO), often preferred over Stack and 
 */
 
 public class ArrayDeque {
+
     public static void main(String[] args) {
+
         // Create a new ArrayDeque of Strings (can be used as a stack or queue)
         java.util.ArrayDeque<String> deque = new java.util.ArrayDeque<>();
 

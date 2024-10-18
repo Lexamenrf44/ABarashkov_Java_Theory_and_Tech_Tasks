@@ -9,7 +9,9 @@ Controls access to a resource with a fixed number of permits, allowing a limited
 */
 
 public class Semaphore {
+
     public static void main(String[] args) {
+
         // Create a Semaphore with 2 permits, allowing only 2 threads to access a resource at a time
         java.util.concurrent.Semaphore semaphore = new java.util.concurrent.Semaphore(2);
 

@@ -10,7 +10,9 @@ Suitable for frequent insertion and deletion of elements, as it does not require
 */
 
 public class LinkedList {
+
     public static void main(String[] args) {
+
         // Create a new LinkedList of Strings
         java.util.LinkedList<String> linkedList = new java.util.LinkedList<>();
 

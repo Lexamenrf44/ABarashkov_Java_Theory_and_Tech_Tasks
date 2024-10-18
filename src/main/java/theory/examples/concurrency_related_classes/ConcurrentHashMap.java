@@ -10,7 +10,9 @@ Provides efficient, thread-safe access to the map without locking the entire str
 */
 
 public class ConcurrentHashMap {
+
     public static void main(String[] args) {
+
         // Create a ConcurrentHashMap of String keys and Integer values
         java.util.concurrent.ConcurrentHashMap<String, Integer> map = new java.util.concurrent.ConcurrentHashMap<>();
 

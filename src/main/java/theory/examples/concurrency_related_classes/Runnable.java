@@ -10,12 +10,14 @@ Commonly used for defining a task in multithreaded applications.
 */
 
 public class Runnable implements java.lang.Runnable {
+
     // Implement the run method to define the thread's task
     public void run() {
         System.out.println("Runnable is running");
     }
 
     public static void main(String[] args) {
+
         // Create a Runnable instance
         Runnable runnable = new Runnable();
 

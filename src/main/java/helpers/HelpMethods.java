@@ -4,7 +4,8 @@ import java.util.*;
 
 public class HelpMethods {
 
-    // A static method named `printFizzBuzz` is defined. This method contains the loop that will implement the FizzBuzz logic.
+    // A static method named `printFizzBuzz` is defined.
+    // This method contains the loop that will implement the FizzBuzz logic.
     public static void printFizzBuzzWithCounter() {
 
         // Initialize counters for Fizz, Buzz, and FizzBuzz.
@@ -57,7 +58,7 @@ public class HelpMethods {
         }
     }
 
-    // Method to find the maximum number in an array
+    // Brute force method to find the maximum value in an array
     public static int findMaxBruteForce(int[] array) {
 
         int max = array[0];  // Assume the first element is the largest for now
@@ -73,7 +74,7 @@ public class HelpMethods {
         return max;  // Return the largest number found
     }
 
-    // Method to find the previous number in an array for a given index
+    // Method to find the previous value in an array for a given index
     public static int findPrevious(int[] array, int index) {
 
         // Check if the current index is greater than 0 (to ensure there is a previous number)

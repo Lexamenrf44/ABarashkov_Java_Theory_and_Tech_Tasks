@@ -13,7 +13,9 @@ It is part of the java.util package
 */
 
 public class DescribeArrayList {
+
     public static void main(String[] args) {
+
         // Create an ArrayList of String type to store a list of fruits
         ArrayList<String> fruits = new ArrayList<>();
 

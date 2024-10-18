@@ -10,7 +10,9 @@ Once all threads have called await(), they proceed together.
 */
 
 public class CyclicBarrier {
+
     public static void main(String[] args) {
+
         // Create a CyclicBarrier that will trip (open) when 3 threads reach it
         java.util.concurrent.CyclicBarrier barrier = new java.util.concurrent.CyclicBarrier(3, () -> {
             // This task will be executed when the last thread reaches the barrier

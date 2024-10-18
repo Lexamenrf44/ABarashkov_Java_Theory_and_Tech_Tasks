@@ -10,7 +10,9 @@ Useful for scenarios where you need to frequently access the element with the hi
 */
 
 public class PriorityQueue {
+
     public static void main(String[] args) {
+
         // Create a new PriorityQueue of integers (min-heap by default)
         java.util.PriorityQueue<Integer> priorityQueue = new java.util.PriorityQueue<>();
 

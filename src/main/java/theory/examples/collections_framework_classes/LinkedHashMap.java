@@ -10,7 +10,9 @@ Useful when you want to iterate over entries in the order they were inserted.
 */
 
 public class LinkedHashMap {
+
     public static void main(String[] args) {
+
         // Create a new LinkedHashMap (maintains insertion order of key-value pairs)
         java.util.LinkedHashMap<String, Integer> linkedHashMap = new java.util.LinkedHashMap<>();
 

@@ -10,7 +10,9 @@ Based on a hash table; operations like add, remove, and contains have constant t
 */
 
 public class HashSet {
+
     public static void main(String[] args) {
+
         // Create a new HashSet of integers
         java.util.HashSet<Integer> hashSet = new java.util.HashSet<>();
 
