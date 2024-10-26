@@ -8,7 +8,7 @@ Find maximum value in array calling a method
 
 */
 
-public class FindMaxIntViaMethodCall {
+public class FindMaxIntUsingBruteForce {
 
     public static void main(String[] args) {
 
