@@ -131,7 +131,7 @@ public class HelpMethods {
 
         // Initialize current sum and max sum variables
         int currentSum = 0;
-        int maxSum = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;
 
         // Loop through each element in the array
         for (int i = 0; i < nums.length; i++) {
@@ -139,7 +139,7 @@ public class HelpMethods {
             currentSum += nums[i];
 
             // Update max sum if the current sum is greater
-            maxSum = Math.max(maxSum, currentSum);
+            max = Math.max(max, currentSum);
 
             // If current sum drops below 0, reset it to 0
             if (currentSum < 0) {
@@ -148,6 +148,6 @@ public class HelpMethods {
         }
 
         // Return the maximum sum found
-        return maxSum;
+        return max;
     }
 }
