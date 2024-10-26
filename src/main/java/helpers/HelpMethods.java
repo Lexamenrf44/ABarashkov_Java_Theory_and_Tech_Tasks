@@ -126,4 +126,28 @@ public class HelpMethods {
         return inputArray[indexOfMaximum] - inputArray[indexOfMinimum];
     }
 
+    // Method to find maximum subarray - Kadane's Algorithm
+    public static int findMaxSubArray(int[] nums) {
+
+        // Initialize current sum and max sum variables
+        int currentSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        // Loop through each element in the array
+        for (int i = 0; i < nums.length; i++) {
+            // Add the current element to the current sum
+            currentSum += nums[i];
+
+            // Update max sum if the current sum is greater
+            maxSum = Math.max(maxSum, currentSum);
+
+            // If current sum drops below 0, reset it to 0
+            if (currentSum < 0) {
+                currentSum = 0;
+            }
+        }
+
+        // Return the maximum sum found
+        return maxSum;
+    }
 }
