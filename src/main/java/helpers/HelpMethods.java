@@ -171,4 +171,32 @@ public class HelpMethods {
         // Return the difference between the maximum and minimum values
         return inputArray[indexOfMaximum] - inputArray[indexOfMinimum];
     }
+
+    public static int[] findTwoSumTwoPointerApproach(int[] nums, int target) {
+        // Initialize two pointers at the start and end of the array
+        int left = 0;
+        int right = nums.length - 1;
+
+        // Loop until the two pointers meet
+        while (left < right) {
+            // Calculate the sum of the elements at the current pointers
+            int currentSum = nums[left] + nums[right];
+
+            // Check if the current sum matches the target
+            if (currentSum == target) {
+                // Return indices incremented by 1 for a 1-based result
+                return new int[]{left + 1, right + 1};
+            }
+            // If current sum is less than target, move the left pointer to the right
+            else if (currentSum < target) {
+                left++;
+            }
+            // If current sum is greater than target, move the right pointer to the left
+            else {
+                right--;
+            }
+        }
+        // Return an empty array if no solution is found
+        return new int[]{};
+    }
 }
