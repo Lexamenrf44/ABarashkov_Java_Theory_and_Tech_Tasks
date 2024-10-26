@@ -1,6 +1,6 @@
 package tech_tasks.array;
 
-import helpers.HelpMethods;
+import helpers.FindTwoSumMethods;
 
 public class FindIndicesThatAddUpToTargetViaTwoPointerMethodCall {
 
@@ -9,7 +9,7 @@ public class FindIndicesThatAddUpToTargetViaTwoPointerMethodCall {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
 
-        int[] result = HelpMethods.findTwoSumTwoPointerApproach(nums, target);
+        int[] result = FindTwoSumMethods.findTwoSumTwoPointerApproach(nums, target);
 
         if (target == 9) {
             assert true;

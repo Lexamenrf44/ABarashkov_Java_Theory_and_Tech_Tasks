@@ -15,7 +15,7 @@ public class FindIndicesThatAddUpToTargetViaHashMapMethodCall {
         int[] nums = {2, 11, 7, 15};
         int target = 9;
 
-        int[] result = HelpMethods.findTwoSumHashMap(nums, target);
+        int[] result = FindTwoSumMethods.findTwoSumHashMap(nums, target);
 
         if (result.length == 2) {
             assert true;

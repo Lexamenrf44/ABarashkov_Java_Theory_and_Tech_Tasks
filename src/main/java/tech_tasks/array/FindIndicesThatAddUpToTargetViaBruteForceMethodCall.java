@@ -15,7 +15,7 @@ public class FindIndicesThatAddUpToTargetViaBruteForceMethodCall {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
 
-        int[] result = HelpMethods.findTwoSumBruteForce(nums, target);
+        int[] result = FindTwoSumMethods.findTwoSumBruteForce(nums, target);
 
         if (result.length == 2) {
             assert true;
