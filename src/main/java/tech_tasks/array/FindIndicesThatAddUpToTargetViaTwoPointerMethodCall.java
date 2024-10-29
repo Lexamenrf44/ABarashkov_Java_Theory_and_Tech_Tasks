@@ -11,11 +11,11 @@ public class FindIndicesThatAddUpToTargetViaTwoPointerMethodCall {
 
         int[] result = FindTwoSumMethods.findTwoSumTwoPointerApproach(nums, target);
 
-        if (target == 9) {
-            assert true;
+        if (result.length == 2) {
             System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
+            assert true;
         } else {
-            assert false : "No index found.";
+            assert false : "No indices found.";
         }
     }
 }
