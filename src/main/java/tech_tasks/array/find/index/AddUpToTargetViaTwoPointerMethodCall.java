@@ -1,8 +1,8 @@
-package tech_tasks.array;
+package tech_tasks.array.find.index;
 
 import helpers.FindTwoSumMethods;
 
-public class FindIndicesThatAddUpToTargetViaTwoPointerMethodCall {
+public class AddUpToTargetViaTwoPointerMethodCall {
 
     public static void main(String[] args) {
 
