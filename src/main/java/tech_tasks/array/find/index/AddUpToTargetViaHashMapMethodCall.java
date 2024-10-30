@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.index;
 
 import helpers.*;
 
@@ -8,7 +8,7 @@ Find indices in array that add up to target value calling a hashmap method
 
 */
 
-public class FindIndicesThatAddUpToTargetViaHashMapMethodCall {
+public class AddUpToTargetViaHashMapMethodCall {
 
     public static void main(String[] args) {
 
