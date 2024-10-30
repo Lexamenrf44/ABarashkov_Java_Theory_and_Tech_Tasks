@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.index;
 
 import helpers.*;
 
@@ -8,7 +8,7 @@ Find indices in array that add up to target value calling a brute force method
 
 */
 
-public class FindIndicesThatAddUpToTargetViaBruteForceMethodCall {
+public class AddUpToTargetViaBruteForceMethodCall {
 
     public static void main(String[] args) {
 
