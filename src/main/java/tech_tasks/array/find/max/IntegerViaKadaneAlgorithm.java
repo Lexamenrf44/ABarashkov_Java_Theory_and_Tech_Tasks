@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.max;
 
 import helpers.FindMaxMethods;
 
@@ -8,10 +8,10 @@ Find maximum value in array using Kadane's Algorithm
 
 */
 
-public class FindMaxIntUsingKadaneAlgorithm {
+public class IntegerViaKadaneAlgorithm {
     public static void main(String[] args) {
         int[] nums = {2, -7, 11, -15};
-        int max = FindMaxMethods.findMaxSubArray(nums);
+        int max = FindMaxMethods.findMaxSubArrayKadaneAlgo(nums);
 
         if (max == 11) {
             assert true;
