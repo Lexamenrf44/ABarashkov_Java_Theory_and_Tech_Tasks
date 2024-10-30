@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.max;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ Find maximum value in array via sorting
 
 */
 
-public class FindMaxIntViaSort {
+public class IntegerViaSort {
 
     public static void main(String[] args) {
 
