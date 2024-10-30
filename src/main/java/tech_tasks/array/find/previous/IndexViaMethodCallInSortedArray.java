@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.previous;
 
 import helpers.*;
 
@@ -10,7 +10,7 @@ Find index of previous value in sorted array calling a method
 
 */
 
-public class FindPreviousIndexViaMethodCallInSortedArray {
+public class IndexViaMethodCallInSortedArray {
 
     public static void main(String[] args) {
 
