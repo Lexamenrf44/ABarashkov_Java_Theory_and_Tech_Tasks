@@ -18,7 +18,7 @@ public class FindMaxMethods {
     }
 
     // Method to find maximum subarray - Kadane's Algorithm
-    public static int findMaxSubArray(int[] nums) {
+    public static int findMaxSubArrayKadaneAlgo(int[] nums) {
 
         // Initialize current sum and max sum variables
         int currentSum = 0;
