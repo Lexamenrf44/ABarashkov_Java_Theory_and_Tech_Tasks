@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.max;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ Find index of maximum value in sorted array using stream api
 
 */
 
-public class FindMaxIndexViaSortUsingStreamApi {
+public class IndexViaSortUsingStreamApi {
 
     public static void main(String[] args) {
 
