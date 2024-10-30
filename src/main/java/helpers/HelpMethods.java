@@ -87,7 +87,7 @@ public class HelpMethods {
     }
 
     // Method to find the difference between maximum and minimum elements
-    public static int CalculateArrayDifference(int[] inputArray)  {
+    public static int findArrayDifferenceLinearScan(int[] inputArray)  {
 
         // Initialize the indices of minimum and maximum elements
         int indexOfMinimum = 0;
