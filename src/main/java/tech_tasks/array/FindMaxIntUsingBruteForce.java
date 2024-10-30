@@ -14,7 +14,7 @@ public class FindMaxIntUsingBruteForce {
 
         int[] arr = {7, 2, 11, 5, 3};
 
-        int max = HelpMethods.findMaxBruteForce(arr);
+        int max = FindMaxMethods.findMaxBruteForce(arr);
 
         if (max == 10) {
             assert true;
