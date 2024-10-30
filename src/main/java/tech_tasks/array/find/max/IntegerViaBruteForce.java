@@ -1,4 +1,4 @@
-package tech_tasks.array;
+package tech_tasks.array.find.max;
 
 import helpers.*;
 
@@ -8,7 +8,7 @@ Find maximum value in array calling a method
 
 */
 
-public class FindMaxIntUsingBruteForce {
+public class IntegerViaBruteForce {
 
     public static void main(String[] args) {
 
