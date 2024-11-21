@@ -74,7 +74,7 @@ tasks.withType(Test) {
     }
 }
 
-task mathTests(type: Test) {
+task webTests(type: Test) {
     systemProperty 'junit.jupiter.execution.parallel.enabled', 'true'
     systemProperty 'junit.jupiter.execution.parallel.mode.default', 'concurrent'
     systemProperty 'junit.jupiter.execution.parallel.mode.classes.default', 'concurrent'
@@ -83,7 +83,7 @@ task mathTests(type: Test) {
     systemProperty 'junit.jupiter.execution.parallel.config.fixed.max-pool-size', '3'
 
     useJUnitPlatform {
-        includeTags 'mathTests'
+        includeTags 'webTests'
     }
 
     retry {
@@ -93,8 +93,13 @@ task mathTests(type: Test) {
     }
 }
 
-task restTests(type: Test) {
+task unitTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'mathTests', 'arrayTests'
+    }
+}
 
+task restTests(type: Test) {
     useJUnitPlatform {
         includeTags 'restTests'
     }
