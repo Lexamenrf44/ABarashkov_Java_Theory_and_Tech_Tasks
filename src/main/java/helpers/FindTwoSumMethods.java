@@ -16,7 +16,6 @@ public class FindTwoSumMethods {
 
             map.put(nums[i], i);
         }
-
         return new int[] {};
     }
 
@@ -29,7 +28,6 @@ public class FindTwoSumMethods {
                 }
             }
         }
-
         return new int[] {};
     }
 
