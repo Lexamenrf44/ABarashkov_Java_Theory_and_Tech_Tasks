@@ -6,51 +6,49 @@ import org.assertj.core.api.Assertions;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class MathUtils {
 
-    @Step ("Addition without rounding mode")
+    @Step ("Addition of {a} and {b} without rounding mode")
     public static BigDecimal addBigDecimalWithoutRoundingMode(Object a, Object b) {
         return convertToBigDecimal(a).add(convertToBigDecimal(b));
     }
 
-    @Step ("Addition with rounding mode")
+    @Step ("Addition of {a} and {b} with rounding mode")
     public static BigDecimal addBigDecimalWithRoundingMode(Object a, Object b, RoundingMode roundingMode) {
         return convertToBigDecimal(a).add(convertToBigDecimal(b)).setScale(2, roundingMode);
     }
 
-    @Step ("Subtraction without rounding mode")
+    @Step ("Subtraction of {a} and {b} without rounding mode")
     public static BigDecimal subtractBigDecimalWithoutRoundingMode(Object a, Object b) {
         return convertToBigDecimal(a).subtract(convertToBigDecimal(b));
     }
 
-    @Step ("Subtraction with rounding mode")
+    @Step ("Subtraction of {a} and {b} with rounding mode")
     public static BigDecimal subtractBigDecimalWithRoundingMode(Object a, Object b, RoundingMode roundingMode) {
         return convertToBigDecimal(a).subtract(convertToBigDecimal(b)).setScale(2, roundingMode);
     }
 
-    @Step ("Multiplication without rounding mode")
+    @Step ("Multiplication of {a} and {b} without rounding mode")
     public static BigDecimal multiplyBigDecimalWithoutRoundingMode(Object a, Object b) {
         return convertToBigDecimal(a).multiply(convertToBigDecimal(b));
     }
 
-    @Step ("Multiplication with rounding mode")
+    @Step ("Multiplication of {a} and {b} with rounding mode")
     public static BigDecimal multiplyBigDecimalWithRoundingMode(Object a, Object b, RoundingMode roundingMode) {
         return convertToBigDecimal(a).multiply(convertToBigDecimal(b)).setScale(2, roundingMode);
     }
 
-    @Step ("Division without rounding mode")
+    @Step ("Division of {a} and {b} without rounding mode")
     public static BigDecimal divideBigDecimalWithoutRoundingMode(Object a, Object b) {
         return convertToBigDecimal(a).divide(convertToBigDecimal(b));
     }
 
-    @Step ("Division with rounding mode")
+    @Step ("Division of {a} and {b} with rounding mode")
     public static BigDecimal divideBigDecimalWithRoundingMode(Object a, Object b, RoundingMode roundingMode) {
         return convertToBigDecimal(a).divide(convertToBigDecimal(b), 2, roundingMode);
     }
 
-    @Step("Comparing the sums of {a} and {b}")
+    @Step("Assert arithmetical operation results")
     public static void assertEqualsBigDecimal(Object a, Object b) {
         Assertions.assertThat(convertToBigDecimal(a).compareTo(convertToBigDecimal(b)))
                 .withFailMessage(a + " is not equal to " + b)
@@ -78,11 +76,5 @@ public class MathUtils {
             case "Long" -> BigDecimal.valueOf((Long) value);
             default -> throw new IllegalArgumentException("Unknown type: " + value.getClass().getSimpleName());
         };
-    }
-
-    @Step("Assert arithmetical results")
-    public static void assertOperationEquals(BigDecimal expected, BigDecimal result) {
-        assertEquals(expected, result, "Test failed! Expected: " + expected + " but got: " + result);
-        System.out.println("Test passed! Expected: " + result);
     }
 }
