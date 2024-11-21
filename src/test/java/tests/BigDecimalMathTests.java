@@ -1,11 +1,11 @@
-package tech_tasks.primitives;
+package tests;
 
-import helpers.MathUtils;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import utils.MathUtils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -36,7 +36,6 @@ public class BigDecimalMathTests {
 
         BigDecimal result = MathUtils.addBigDecimalWithRoundingMode(a, b, RoundingMode.UP);
         BigDecimal expected = new BigDecimal("1.50");
-
         MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
