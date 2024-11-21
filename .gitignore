@@ -5,6 +5,7 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 allure-results/
+allure-report/
 settings.gradle.kts
 
 ### IntelliJ IDEA ###
