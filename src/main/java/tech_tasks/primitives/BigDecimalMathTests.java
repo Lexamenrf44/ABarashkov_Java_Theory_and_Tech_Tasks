@@ -23,9 +23,9 @@ public class BigDecimalMathTests {
         double b = 9.98;
 
         BigDecimal result = MathUtils.addBigDecimalWithoutRoundingMode(a, b);
-        BigDecimal expected = new BigDecimal("-0.01");
+        BigDecimal expected = new BigDecimal("-0.010000");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.addBigDecimalWithRoundingMode(a, b, RoundingMode.UP);
         BigDecimal expected = new BigDecimal("1.50");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -49,7 +49,7 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.subtractBigDecimalWithoutRoundingMode(a, b);
         BigDecimal expected = new BigDecimal("1.0119");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -61,7 +61,7 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.subtractBigDecimalWithRoundingMode(a, b, RoundingMode.UP);
         BigDecimal expected = new BigDecimal("1.02");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -73,7 +73,7 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.multiplyBigDecimalWithoutRoundingMode(a, b);
         BigDecimal expected = new BigDecimal("0.74191570");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -85,7 +85,7 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.multiplyBigDecimalWithRoundingMode(a, b, RoundingMode.DOWN);
         BigDecimal expected = new BigDecimal("0.74");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -97,7 +97,7 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.divideBigDecimalWithoutRoundingMode(a, b);
         BigDecimal expected = new BigDecimal("1");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 
     @Test
@@ -109,6 +109,6 @@ public class BigDecimalMathTests {
         BigDecimal result = MathUtils.divideBigDecimalWithRoundingMode(a, b, RoundingMode.UP);
         BigDecimal expected = new BigDecimal("3.06");
 
-        MathUtils.assertOperationEquals(expected, result);
+        MathUtils.assertEqualsBigDecimal(expected, result);
     }
 }
