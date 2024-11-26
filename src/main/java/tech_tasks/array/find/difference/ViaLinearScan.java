@@ -1,6 +1,6 @@
 package tech_tasks.array.find.difference;
 
-import helpers.*;
+import helpers.HelpMethods;
 
 /*
 
@@ -9,7 +9,6 @@ Find the difference between its maximum and minimum in array calling a linear sc
 */
 
 public class ViaLinearScan {
-
     public static void main(String[] args) {
 
         int[] arr = {3, 5, 1, 8, 7};
@@ -17,7 +16,9 @@ public class ViaLinearScan {
 
         int difference = HelpMethods.findArrayDifferenceLinearScan(arr);
 
-        if (difference == 8) {
+        System.out.println(difference);
+
+        if (difference == 7) {
             assert true;
             System.out.println("Test passed! Expected: " + difference);
         } else {
