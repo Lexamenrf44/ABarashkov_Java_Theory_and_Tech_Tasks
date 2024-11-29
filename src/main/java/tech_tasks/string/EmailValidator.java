@@ -36,8 +36,6 @@ public class EmailValidator {
         for (String email : invalidEmails) {
             Assertions.assertFalse(validateEmail(email));
         }
-
-        System.out.println(getConfig("string"));
     }
 
 //    static boolean validateEmail(String email) {
@@ -66,9 +64,5 @@ public class EmailValidator {
                 .chars()
                 .filter(c -> c == '.').count() == 1
                 && !email.contains("..");
-    }
-
-    private static String getConfig(String env) {
-        return env.equals("local") ? "localConfig" : "dockerConfig";
     }
 }
