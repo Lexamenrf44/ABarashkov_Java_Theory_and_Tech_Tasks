@@ -2,27 +2,22 @@ package tech_tasks.array.find.max;
 
 import java.util.Arrays;
 
-/*
-
-Find index of maximum value in unsorted array using stream api
-
-*/
-
 public class IndexViaStreamApi {
-
     public static void main(String[] args) {
-
         int[] arr = {4, 2, 9, 1, 5, 6};
+
+        for (int i = 0; i < arr.length; i++) {}
+        System.out.println(findMaxIndexViaLinearScan(arr));
+    }
+
+    static int findMaxIndexViaLinearScan(int[] arr) {
+
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Array cannot be null or empty");
+        }
 
         int max = Arrays.stream(arr).max().getAsInt();
 
-        int maxIndex = Arrays.binarySearch(arr, max);
-
-        if (maxIndex == 2) {
-            assert true;
-            System.out.println("Test passed! The index is as expected: " + maxIndex);
-        } else {
-            assert false : "Test failed! Expected index to be 2, but got " + maxIndex;
-        }
+        return Arrays.binarySearch(arr, max);
     }
 }
