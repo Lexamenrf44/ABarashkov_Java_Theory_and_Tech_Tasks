@@ -82,6 +82,7 @@ public class EvenNumbers {
     }
 
     public static List<Integer> findEvenNumbersViaStreamApi(int i) {
+        
         // При работе со StreamAPI
         // Первый шаг - это создать переменную 'коллекция';
         // Второй шаг - это отфильтровать и убрать все нечетные числа
