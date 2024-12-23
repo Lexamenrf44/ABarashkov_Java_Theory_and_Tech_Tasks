@@ -81,7 +81,7 @@ public class IndexInInterval {
     void rangeCoversEntireArray() {
         int[] array = {1, 2, 3, 4, 5};
         int a = 0, b = array.length, target = 4;
-        assertEquals(3, findIndexInRange(array, a, b, target)); // Index of 4 is 3
+        assertEquals(3, findIndexInRange(array, a, b, target));
     }
 
     public static int findIndexInRange(int[] array, int a, int b, int target) {
