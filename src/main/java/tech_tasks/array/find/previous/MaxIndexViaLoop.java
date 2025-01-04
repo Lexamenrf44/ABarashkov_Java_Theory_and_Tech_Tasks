@@ -109,8 +109,8 @@ public class MaxIndexViaLoop {
 
     public static int findIndexOfSecondMaxInt(int[] array) {
 
-        //Time Complexity: O(n)
-        //Space Complexity: O(1)
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)
 
         int firstMaxIndex = 0;
 
