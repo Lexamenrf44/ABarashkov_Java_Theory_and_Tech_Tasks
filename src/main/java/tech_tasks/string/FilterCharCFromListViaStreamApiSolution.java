@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class FilterCharCFromListViaStreamApiSolution {
@@ -32,13 +33,22 @@ public class FilterCharCFromListViaStreamApiSolution {
     @Test
     void arrayWithMixedCharactersTest() {
         String[] array = {"A", "B", "C", " c", "D", "E", "C", null, "F"};
-        assertThat(filterOutCharCFromStringArray(array)).contains("A", "B", "D", "E", null, "F");
+        List<String> expected = Arrays.asList("A", "B", "D", "E", null, "F");
+        assertEquals(expected, filterOutCharCFromStringArray(array));
     }
 
     @Test
     void arrayWithNoCCharactersTest() {
         String[] array = {"A", "B", "D", "E", null, ""};
-        assertThat(filterOutCharCFromStringArray(array)).contains("A", "B", "D", "E", null, "");
+        List<String> expected = Arrays.asList("A", "B", "D", "E", null, "");
+        assertEquals(expected, filterOutCharCFromStringArray(array));
+    }
+
+    @Test
+    void arrayWithElementsContainingCCharactersTest() {
+        String[] array = {"AbraCadabra", "Baracuda", "Cadmium", "D", "E", "F", "", " ", null, "C", "C ", " C ", " C", "c", "c ", " c ", " c"};
+        List<String> expected = Arrays.asList("AbraCadabra", "Baracuda", "Cadmium", "D", "E", "F", "", " ", null);
+        assertEquals(expected, filterOutCharCFromStringArray(array));
     }
 
     public static List<String> filterOutCharCFromStringArray(String[] array) {
