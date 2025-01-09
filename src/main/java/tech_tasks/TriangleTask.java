@@ -22,7 +22,7 @@ public class TriangleTask {
     // Нужно рассчитать площадь треугольника
 
     @Test
-    public void TriangleTest() {
+    public void RandomTriangleTest() {
         List<Integer> x = List.of(0, 4, 7);
         List<Integer> y = List.of(0, 8, 6);
 
@@ -40,7 +40,37 @@ public class TriangleTask {
     }
 
     @Test
-    public void TriangleAreaExceptionTest() {
+    public void EquilateralTriangleAreaTest() {
+        List<Integer> x = List.of(2, 8, 5);
+        List<Integer> y = List.of(2, 2, 7);
+
+        int expectedArea = 15;
+
+        assertEquals(expectedArea, calculateTriangleArea(x, y));
+    }
+
+    @Test
+    public void IsoscelesTriangleAreaTest2() {
+        List<Integer> x = List.of(3, 7, 5);
+        List<Integer> y = List.of(2, 2, 6);
+
+        int expectedArea = 8;
+
+        assertEquals(expectedArea, calculateTriangleArea(x, y));
+    }
+
+    @Test
+    public void RectangularTriangleAreaTest3() {
+        List<Integer> x = List.of(2, 2, 7);
+        List<Integer> y = List.of(2, 7, 2);
+
+        int expectedArea = 12;
+
+        assertEquals(expectedArea, calculateTriangleArea(x, y));
+    }
+
+    @Test
+    public void SectionExceptionTest() {
         List<Integer> x = List.of(0, 4);
         List<Integer> y = List.of(0, 8);
 
@@ -49,7 +79,7 @@ public class TriangleTask {
     }
 
     @Test
-    public void TriangleAreaExceptionTest2() {
+    public void QuadrilateralExceptionTest() {
         List<Integer> x = List.of(0, 4, 7, 8);
         List<Integer> y = List.of(0, 8, 6, 6);
 
@@ -58,7 +88,7 @@ public class TriangleTask {
     }
 
     @Test
-    public void NotTriangleTest() {
+    public void PointExceptionTest() {
         List<Integer> x = List.of(0, 0, 0);
         List<Integer> y = List.of(0, 0, 0);
 
@@ -102,7 +132,7 @@ public class TriangleTask {
             }
         }
 
-        if (X.size() != 3 && Y.size() != 3) {
+        if (X.size() != 3 || Y.size() != 3) {
             throw new IllegalArgumentException("Collection should consist of three values for x and y");
         }
 
@@ -111,7 +141,7 @@ public class TriangleTask {
         String s2 = X.get(2) + "" + Y.get(2);
 
         if (s.equals(s1) || s.equals(s2)) {
-            throw new IllegalArgumentException("This is not a triangle");
+            throw new IllegalArgumentException("This is not a triangle 2");
         }
 
         double AB = Math.sqrt(Math.pow(X.get(1) - X.get(0), 2) + Math.pow(Y.get(1) - Y.get(0), 2));
@@ -123,7 +153,6 @@ public class TriangleTask {
         double Area = Math.sqrt(p * (p - AB) * (p - BC) * (p - AC));
 
         int value = (int)Area;
-        System.out.println(value);
 
         return value;
     }
