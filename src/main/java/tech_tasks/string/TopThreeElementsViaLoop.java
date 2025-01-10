@@ -2,10 +2,7 @@ package tech_tasks.string;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,14 +31,38 @@ public class TopThreeElementsViaLoop {
     }
 
     @Test
+    void randomTextTest() {
+        String randomTextString = "Lorem ipsum odor amet, consectetuer adipiscing elit. Magna at consectetur facilisis hac cras.";
+        assertEquals("a, c, e, i, s, t, o, r", findTopThreeElements(randomTextString));
+    }
+
+    @Test
+    void specialTextTest() {
+        String randomTextString = ",,,,,,,,, .....        a";
+        assertEquals("a", findTopThreeElements(randomTextString));
+    }
+
+    @Test
     void oneElementTest() {
         String oneElementString = "a";
         assertEquals("a", findTopThreeElements(oneElementString));
     }
 
     @Test
-    void duplicatedElementsTest() {
+    void multipleDuplicatedElementsTest() {
         String duplicateElementsString = "aabbccdd";
+        assertEquals("a, b, c, d", findTopThreeElements(duplicateElementsString));
+    }
+
+    @Test
+    void singleDuplicatedElementTest() {
+        String duplicateElementsString = "aaaa";
+        assertEquals("a", findTopThreeElements(duplicateElementsString));
+    }
+
+    @Test
+    void singleDuplicatedElementsTest() {
+        String duplicateElementsString = "abcd";
         assertEquals("a, b, c, d", findTopThreeElements(duplicateElementsString));
     }
 
@@ -57,10 +78,16 @@ public class TopThreeElementsViaLoop {
         assertEquals("a, b, c", findTopThreeElements(someElementsDuplicatedString));
     }
 
+    @Test
+    void randomTest() {
+        String someElementsDuplicatedString = "aaaaaabbbbbccccddd";
+        assertEquals("a, b, c", findTopThreeElements(someElementsDuplicatedString));
+    }
+
     public static String findTopThreeElements(String text) {
 
         Map<String, Integer> map = new HashMap<>();
-        
+
         // Null array handling
         if (text == null) {
             throw new IllegalArgumentException("String cannot be null");
@@ -72,8 +99,10 @@ public class TopThreeElementsViaLoop {
         }
 
         String[] symbols = text.split("");
-
         for (int i = 0; i < symbols.length; i++) {
+            if (symbols[i].equals(" ") || symbols[i].equals(".") || symbols[i].equals(",")) {
+                continue;
+            }
             if (map.containsKey(symbols[i])) {
                 map.replace(symbols[i], map.get(symbols[i]) + 1);
             } else {
