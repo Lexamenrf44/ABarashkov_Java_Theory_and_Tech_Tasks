@@ -14,8 +14,7 @@ public class FilterCharCFromListViaStreamApiSolution {
 
     @Test
     void nullArrayTest() {
-        String[] array = null;
-        assertThrows(IllegalArgumentException.class, () -> filterOutCharCFromStringArray(array));
+        assertThrows(IllegalArgumentException.class, () -> filterOutCharCFromStringArray(null));
     }
 
     @Test
