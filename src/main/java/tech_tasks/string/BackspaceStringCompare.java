@@ -77,8 +77,6 @@ public class BackspaceStringCompare {
 
         while (stringToSanitize.contains("#")) {
 
-
-
             String begin;
 
             int i = stringToSanitize.indexOf("#");
