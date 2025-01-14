@@ -1,15 +1,15 @@
-package tech_tasks.array.find.equal;
+package neetcode;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class IndicesTrueFalseSearch {
+public class FindDuplicatesInArrayTests {
 
     @Test
     public void emptyArray() {
         int[] arr = {};
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findDuplicatesInArray(arr));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> hasDuplicates(arr));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Array cannot be empty"));
 
@@ -17,7 +17,7 @@ public class IndicesTrueFalseSearch {
 
     @Test
     public void nullArray() {
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findDuplicatesInArray(null));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> hasDuplicates(null));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Array cannot be null"));
 
@@ -26,7 +26,7 @@ public class IndicesTrueFalseSearch {
     @Test
     public void singleElementArray() {
         int[] arr = {1};
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findDuplicatesInArray(arr));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> hasDuplicates(arr));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Array cannot be single element"));
     }
@@ -34,22 +34,22 @@ public class IndicesTrueFalseSearch {
     @Test
     public void multipleElementsArray() {
         int[] arr = {1, 2};
-        assertFalse(findDuplicatesInArray(arr));
+        assertFalse(hasDuplicates(arr));
     }
 
     @Test
     public void duplicateElementsArray() {
         int[] arr = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        assertTrue(findDuplicatesInArray(arr));
+        assertTrue(hasDuplicates(arr));
     }
 
     @Test
     public void negativeElementsArray() {
         int[] arr = {-1, -2, -3, -4, -5, -6, -7, -5, -8, -9};
-        assertTrue(findDuplicatesInArray(arr));
+        assertTrue(hasDuplicates(arr));
     }
 
-    public boolean findDuplicatesInArray(int[] arr) {
+    public boolean hasDuplicates(int[] arr) {
         exceptionHandler(arr);
 
         for (int i = 0; i < arr.length; i++) {

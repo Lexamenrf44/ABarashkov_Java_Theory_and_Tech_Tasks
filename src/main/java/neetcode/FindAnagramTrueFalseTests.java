@@ -1,4 +1,4 @@
-package tech_tasks.string;
+package neetcode;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FindAnagramTrueFalse {
+public class FindAnagramTrueFalseTests {
 
     @Test
     public void nullStringsTest() {
