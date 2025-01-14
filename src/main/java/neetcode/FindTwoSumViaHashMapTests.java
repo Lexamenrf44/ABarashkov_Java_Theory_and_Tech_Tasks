@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FindTwoSumTests {
+public class FindTwoSumViaHashMapTests {
 
     @Test
     void emptyArrayTest() {
