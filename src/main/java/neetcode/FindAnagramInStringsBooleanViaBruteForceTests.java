@@ -6,25 +6,25 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FindAnagramViaBruteForceTests {
+public class FindAnagramInStringsBooleanViaBruteForceTests {
 
     @Test
     public void nullStringsTest() {
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> isAnagram(null, null));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram(null, null));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must not be null"));
     }
 
     @Test
     public void emptyStringsTest() {
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> isAnagram("", ""));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram("", ""));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must not be empty"));
     }
 
     @Test
     public void differentStringsLengthTest() {
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> isAnagram("abcd", "abcde"));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram("abcd", "abcde"));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must be of the same length"));
     }
@@ -33,7 +33,7 @@ public class FindAnagramViaBruteForceTests {
     public void capitalLettersStringsTest() {
         String s = "Hasahorn";
         String t = "Hosahorn";
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> isAnagram(s, t));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram(s, t));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must not contain uppercase characters"));
     }
@@ -42,7 +42,7 @@ public class FindAnagramViaBruteForceTests {
     public void capitalLetterStringTest() {
         String s = "ha";
         String t = "aH";
-        Exception thrown = assertThrows(IllegalArgumentException.class, () -> isAnagram(s, t));
+        Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram(s, t));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must not contain uppercase characters"));
     }
@@ -51,17 +51,17 @@ public class FindAnagramViaBruteForceTests {
     public void positiveCaseTest() {
         String s = "ha";
         String t = "ah";
-        assertTrue(isAnagram(s, t));
+        assertTrue(findAnagram(s, t));
     }
 
     @Test
     public void negativeCaseTest() {
         String s = "hasahorn";
         String t = "hosahorn";
-        assertFalse(isAnagram(s, t));
+        assertFalse(findAnagram(s, t));
     }
 
-    public static boolean isAnagram(String s, String t) {
+    private static boolean findAnagram(String s, String t) {
 
         exceptionsHandler(s, t);
 

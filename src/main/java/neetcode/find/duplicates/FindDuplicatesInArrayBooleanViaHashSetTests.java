@@ -1,10 +1,14 @@
-package neetcode;
+package neetcode.find.duplicates;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.HashSet;
+import java.util.Set;
 
-public class FindDuplicatesInArrayViaBruteForceTests {
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+public class FindDuplicatesInArrayBooleanViaHashSetTests {
 
     @Test
     public void emptyArray() {
@@ -46,18 +50,18 @@ public class FindDuplicatesInArrayViaBruteForceTests {
     @Test
     public void negativeElementsArray() {
         int[] arr = {-1, -2, -3, -4, -5, -6, -7, -5, -8, -9};
-        assertTrue(hasDuplicates(arr));
+        assertTrue(hasDuplicates(arr));;
     }
 
-    public boolean hasDuplicates(int[] arr) {
+    private boolean hasDuplicates(int[] arr) {
         exceptionHandler(arr);
 
+        Set<Integer> seen = new HashSet<>();
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] == arr[j]) {
-                    return true;
-                }
+            if (seen.contains(arr[i])) {
+                return true;
             }
+            seen.add(arr[i]);
         }
         return false;
     }
