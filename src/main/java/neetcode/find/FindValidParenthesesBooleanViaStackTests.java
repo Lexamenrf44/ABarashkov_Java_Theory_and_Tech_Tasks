@@ -27,10 +27,17 @@ public class FindValidParenthesesBooleanViaStackTests {
     }
 
     @Test
-    void invalidSingleParentheses() {
+    void invalidSingleOpeningParentheses() {
         String s = "[";
         assertFalse(isValidParentheses(s));
     }
+
+    @Test
+    void invalidSingleClosingParentheses() {
+        String s = "}";
+        assertFalse(isValidParentheses(s));
+    }
+
     @Test
     void invalidNeighbouringParentheses() {
         String s = "{[]()";
@@ -72,15 +79,20 @@ public class FindValidParenthesesBooleanViaStackTests {
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
-            } else if (c == ')' && !stack.isEmpty() && stack.peek() == '(') {
-                stack.pop();
-            } else if (c == '}' && !stack.isEmpty() && stack.peek() == '{') {
-                stack.pop();
-            } else if (c == ']' && !stack.isEmpty() && stack.peek() == '[') {
-                stack.pop();
+            } else if (c == ')' || c == '}' || c == ']') {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                char top = stack.peek();
+                if ((c == ')' && top == '(') ||
+                    (c == '}' && top == '{') ||
+                    (c == ']' && top == '[')) {
+                    stack.pop();
+                } else {
+                    return false;
+                }
             }
         }
-
         return stack.isEmpty();
     }
 
