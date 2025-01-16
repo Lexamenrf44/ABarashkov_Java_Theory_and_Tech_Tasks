@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FindPalindromeTests {
+public class FindPalindromeBooleanViaReverseStringTests {
 
     @Test
     void validPalindromeTest() {
