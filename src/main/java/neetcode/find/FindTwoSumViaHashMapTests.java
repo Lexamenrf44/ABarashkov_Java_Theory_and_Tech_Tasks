@@ -1,4 +1,4 @@
-package neetcode;
+package neetcode.find;
 
 import org.junit.jupiter.api.Test;
 
