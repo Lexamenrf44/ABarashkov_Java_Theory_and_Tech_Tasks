@@ -9,28 +9,28 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FindAnagramInStringsBooleanViaBruteForceTests {
 
     @Test
-    public void nullStringsTest() {
+    void nullStringsTest() {
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram(null, null));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must not be null"));
     }
 
     @Test
-    public void emptyStringsTest() {
+    void emptyStringsTest() {
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram("", ""));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must not be empty"));
     }
 
     @Test
-    public void differentStringsLengthTest() {
+    void differentStringsLengthTest() {
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram("abcd", "abcde"));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Strings must be of the same length"));
     }
 
     @Test
-    public void capitalLettersStringsTest() {
+    void capitalLettersStringsTest() {
         String s = "Hasahorn";
         String t = "Hosahorn";
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram(s, t));
@@ -39,7 +39,7 @@ public class FindAnagramInStringsBooleanViaBruteForceTests {
     }
 
     @Test
-    public void capitalLetterStringTest() {
+    void capitalLetterStringTest() {
         String s = "ha";
         String t = "aH";
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> findAnagram(s, t));
@@ -48,14 +48,14 @@ public class FindAnagramInStringsBooleanViaBruteForceTests {
     }
 
     @Test
-    public void positiveCaseTest() {
+    void positiveCaseTest() {
         String s = "ha";
         String t = "ah";
         assertTrue(findAnagram(s, t));
     }
 
     @Test
-    public void negativeCaseTest() {
+    void negativeCaseTest() {
         String s = "hasahorn";
         String t = "hosahorn";
         assertFalse(findAnagram(s, t));

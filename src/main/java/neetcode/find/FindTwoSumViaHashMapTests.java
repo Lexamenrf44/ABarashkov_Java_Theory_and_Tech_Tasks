@@ -68,7 +68,7 @@ public class FindTwoSumViaHashMapTests {
         assertTrue(thrown.getMessage().contains("Target must be between -10,000,000 and 10,000,000."));
     }
 
-    public static int[] findTwoSum(int[] nums, int target) {
+    private static int[] findTwoSum(int[] nums, int target) {
 
         exceptionHandler(nums, target);
 

@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FindDuplicatesInArrayIntViaHashMapTests {
 
     @Test
-    public void emptyArray() {
+    void emptyArray() {
         int[] arr = {};
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> hasDuplicates(arr));
         System.out.println("Exception message: " + thrown.getMessage());
@@ -18,7 +18,7 @@ public class FindDuplicatesInArrayIntViaHashMapTests {
     }
 
     @Test
-    public void nullArray() {
+    void nullArray() {
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> hasDuplicates(null));
         System.out.println("Exception message: " + thrown.getMessage());
         assertTrue(thrown.getMessage().contains("Array cannot be null"));
@@ -26,7 +26,7 @@ public class FindDuplicatesInArrayIntViaHashMapTests {
     }
 
     @Test
-    public void singleElementArray() {
+    void singleElementArray() {
         int[] arr = {1};
         Exception thrown = assertThrows(IllegalArgumentException.class, () -> hasDuplicates(arr));
         System.out.println("Exception message: " + thrown.getMessage());
@@ -34,21 +34,21 @@ public class FindDuplicatesInArrayIntViaHashMapTests {
     }
 
     @Test
-    public void multipleElementsArray() {
+    void multipleElementsArray() {
         int[] arr = {1, 2};
         int[] expected = {};
         assertArrayEquals(expected, hasDuplicates(arr));
     }
 
     @Test
-    public void duplicateElementsArray() {
+    void duplicateElementsArray() {
         int[] arr = {1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] expected = {1};
         assertArrayEquals(expected, hasDuplicates(arr));
     }
 
     @Test
-    public void negativeElementsArray() {
+    void negativeElementsArray() {
         int[] arr = {-1, -2, -3, -4, -5, -6, -7, -5, -8, -9};
         int[] expected = {-5};
         assertArrayEquals(expected, hasDuplicates(arr));
